@@ -10,7 +10,7 @@ from truncatehtml import truncate
 def _generate_status_badge_html(repo, github_url):
     return f"""
     <a class="reference external" href="{github_url}/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="{github_url}/actions/workflows/nightly-build.yaml/badge.svg" /></a>
-    <a class="reference external" href="https://binder-staging.2i2c.cloud/v2/gh/ProjectPythiaTutorials/{repo}.git/main"><img alt="Binder" src="https://binder-staging.2i2c.cloud/badge_logo.svg" /></a>
+    <a class="reference external" href="https://mybinder.org/v2/gh/ProjectPythiaTutorials/{repo}.git/main"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
     """
 
 
