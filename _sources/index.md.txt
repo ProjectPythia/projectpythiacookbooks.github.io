@@ -69,7 +69,7 @@ Packages
 <span class="badge bg-primary mybadges">intake-esm</span>
 <div
     <a class="reference external" href="https://github.com/ProjectPythiaCookbooks/cesm-lens-aws-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythiaCookbooks/cesm-lens-aws-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
-    <a class="reference external" href="https://binder-staging.2i2c.cloud/v2/gh/ProjectPythiaTutorials/cesm-lens-aws-cookbook.git/main"><img alt="Binder" src="https://binder-staging.2i2c.cloud/badge_logo.svg" /></a>
+    <a class="reference external" href="https://mybinder.org/v2/gh/ProjectPythiaTutorials/cesm-lens-aws-cookbook.git/main"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
     </div>
 </div>
 
@@ -94,7 +94,7 @@ Packages
 <span class="badge bg-primary mybadges">intake-esm</span>
 <div
     <a class="reference external" href="https://github.com/ProjectPythiaCookbooks/cmip6-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythiaCookbooks/cmip6-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
-    <a class="reference external" href="https://binder-staging.2i2c.cloud/v2/gh/ProjectPythiaTutorials/cmip6-cookbook.git/main"><img alt="Binder" src="https://binder-staging.2i2c.cloud/badge_logo.svg" /></a>
+    <a class="reference external" href="https://mybinder.org/v2/gh/ProjectPythiaTutorials/cmip6-cookbook.git/main"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
     </div>
 </div>
 
@@ -121,7 +121,7 @@ Packages
 <span class="badge bg-primary mybadges">zarr</span>
 <div
     <a class="reference external" href="https://github.com/ProjectPythiaCookbooks/HRRR-AWS-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythiaCookbooks/HRRR-AWS-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
-    <a class="reference external" href="https://binder-staging.2i2c.cloud/v2/gh/ProjectPythiaTutorials/HRRR-AWS-cookbook.git/main"><img alt="Binder" src="https://binder-staging.2i2c.cloud/badge_logo.svg" /></a>
+    <a class="reference external" href="https://mybinder.org/v2/gh/ProjectPythiaTutorials/HRRR-AWS-cookbook.git/main"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
     </div>
 </div>
 
@@ -146,7 +146,7 @@ Packages
 <span class="badge bg-primary mybadges">radar</span>
 <div
     <a class="reference external" href="https://github.com/ProjectPythiaCookbooks/radar-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythiaCookbooks/radar-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
-    <a class="reference external" href="https://binder-staging.2i2c.cloud/v2/gh/ProjectPythiaTutorials/radar-cookbook.git/main"><img alt="Binder" src="https://binder-staging.2i2c.cloud/badge_logo.svg" /></a>
+    <a class="reference external" href="https://mybinder.org/v2/gh/ProjectPythiaTutorials/radar-cookbook.git/main"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
     </div>
 </div>
 
