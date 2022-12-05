@@ -15,7 +15,7 @@ def main(app):
         for line in fid:
             subtext = subtext + line
 
-    submit_btn_link = "https://github.com/ProjectPythia/projectpythiacookbooks.github.io/issues/new?assignees=ProjectPythiaCookbooks%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook"
+    submit_btn_link = "https://github.com/ProjectPythia/projectpythiacookbooks.github.io/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook"
     submit_btn_txt = "Submit a new Cookbook"
     menu_html = generate_menu(
         repo_dicts, submit_btn_txt=submit_btn_txt, submit_btn_link=submit_btn_link
