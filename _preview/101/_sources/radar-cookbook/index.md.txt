@@ -1,3 +1,3 @@
 # Redirect notice
 
-The URL for the Radar Cookbook is now https://projectpythia.org/radar-cookbook/
+The URL for the Radar Cookbook is now <https://projectpythia.org/radar-cookbook/>
