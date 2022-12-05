@@ -19,10 +19,10 @@ def generate_repo_dicts(all_items):
     repo_dicts = []
     for item in all_items:
         repo = item.strip()
-        github_url = f"https://github.com/ProjectPythiaCookbooks/{repo}"
+        github_url = f"https://github.com/ProjectPythia/{repo}"
         cookbook_url = f"https://cookbooks.projectpythia.org/{repo}/README.html"
 
-        config_url = f"https://raw.githubusercontent.com/ProjectPythiaCookbooks/{repo}/main/_config.yml"
+        config_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_config.yml"
         config = urllib.request.urlopen(config_url)
         config_dict = yaml.safe_load(config)
 
@@ -135,7 +135,7 @@ def build_from_repos(
         authors_str = f"<strong>Author:</strong> {authors}"
 
         thumbnail = repo_dict["thumbnail"]
-        thumbnail_url = f"https://raw.githubusercontent.com/ProjectPythiaCookbooks/{repo}/main/{thumbnail}"
+        thumbnail_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/{thumbnail}"
 
         tag_dict = repo_dict["tags"]
         tag_list = sorted((itertools.chain(*tag_dict.values())))
