@@ -11,7 +11,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 
 <div class="d-sm-flex mt-3 mb-4">
 <div class="d-flex gallery-menu">
-<div><a role="button" class="btn btn-primary btn-sm mx-1" href=https://github.com/ProjectPythia/projectpythiacookbooks.github.io/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook>Submit a new Cookbook</a></div>
+<div><a role="button" class="btn btn-primary btn-sm mx-1" href=https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook>Submit a new Cookbook</a></div>
 </div>
 <div class="ml-auto d-flex">
 <div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>
