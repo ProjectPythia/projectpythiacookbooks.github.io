@@ -20,7 +20,7 @@ def generate_repo_dicts(all_items):
     for item in all_items:
         repo = item.strip()
         github_url = f"https://github.com/ProjectPythia/{repo}"
-        cookbook_url = f"https://cookbooks.projectpythia.org/{repo}/README.html"
+        cookbook_url = f"https://projectpythia.org/{repo}/README.html"
 
         config_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_config.yml"
         config = urllib.request.urlopen(config_url)
