@@ -1,4 +1,3 @@
-# projectpythiatutorials.github.io
-Root site for the ProjectPythiaTutorials GitHub Pages
+# cookbook-gallery
 
-projectpythiacookbooks.github.io
+This repo contains code to generate the [Project Pythia Cookbooks gallery](https://cookbooks.projectpythia.org)

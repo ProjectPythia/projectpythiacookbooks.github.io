@@ -7,7 +7,7 @@ on:
       - edited
 jobs:
   validate-user-submission:
-    if: github.repository == 'ProjectPythia/projectpythiacookbooks.github.io' && contains(github.event.issue.labels.*.name, 'cookbook-gallery-submission')
+    if: github.repository == 'ProjectPythia/cookbook-gallery' && contains(github.event.issue.labels.*.name, 'cookbook-gallery-submission')
     runs-on: ubuntu-latest
     defaults:
       run:
