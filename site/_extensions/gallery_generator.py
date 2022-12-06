@@ -7,10 +7,20 @@ import yaml
 from truncatehtml import truncate
 
 
+def _grab_binder_link(repo):
+    raw_readme_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/README.md"
+    request = urllib.request.urlopen(raw_readme_url)
+    page = request.read().decode().split("\n")
+    binder_line = page[5].split("(")
+    binder_url = binder_line[-1][:-1]
+    return binder_url
+
+
 def _generate_status_badge_html(repo, github_url):
+    binder_link = _grab_binder_link(repo)
     return f"""
     <a class="reference external" href="{github_url}/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="{github_url}/actions/workflows/nightly-build.yaml/badge.svg" /></a>
-    <a class="reference external" href="https://mybinder.org/v2/gh/ProjectPythiaTutorials/{repo}.git/main"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
+    <a class="reference external" href="{binder_link}"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
     """
 
 
