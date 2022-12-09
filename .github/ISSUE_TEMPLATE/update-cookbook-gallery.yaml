@@ -3,7 +3,7 @@ description: For submitting a new Cookbook repository for acceptance into the ga
 title: 'Update Gallery with new Cookbook'
 labels: ['content', 'cookbook-gallery-submission']
 assignees:
-  - ProjectPythiaCookbooks/education
+  - ProjectPythia/education
 
 body:
   - type: markdown

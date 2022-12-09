@@ -7,10 +7,21 @@ import yaml
 from truncatehtml import truncate
 
 
+def _grab_binder_link(repo):
+    config_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_config.yml"
+    config = urllib.request.urlopen(config_url)
+    config_dict = yaml.safe_load(config)
+    root = config_dict["sphinx"]["config"]["html_theme_options"]["launch_buttons"]["binderhub_url"]
+    end = f"/v2/gh/ProjectPythia/{repo}.git/main"
+    url = root + end
+    return root, url
+
+
 def _generate_status_badge_html(repo, github_url):
+    binder_root, binder_link = _grab_binder_link(repo)
     return f"""
     <a class="reference external" href="{github_url}/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="{github_url}/actions/workflows/nightly-build.yaml/badge.svg" /></a>
-    <a class="reference external" href="https://binder-staging.2i2c.cloud/v2/gh/ProjectPythiaTutorials/{repo}.git/main"><img alt="Binder" src="https://binder-staging.2i2c.cloud/badge_logo.svg" /></a>
+    <a class="reference external" href="{binder_link}"><img alt="Binder" src="{binder_root}/badge_logo.svg" /></a>
     """
 
 
@@ -19,10 +30,10 @@ def generate_repo_dicts(all_items):
     repo_dicts = []
     for item in all_items:
         repo = item.strip()
-        github_url = f"https://github.com/ProjectPythiaCookbooks/{repo}"
-        cookbook_url = f"https://cookbooks.projectpythia.org/{repo}/README.html"
+        github_url = f"https://github.com/ProjectPythia/{repo}"
+        cookbook_url = f"https://projectpythia.org/{repo}/README.html"
 
-        config_url = f"https://raw.githubusercontent.com/ProjectPythiaCookbooks/{repo}/main/_config.yml"
+        config_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_config.yml"
         config = urllib.request.urlopen(config_url)
         config_dict = yaml.safe_load(config)
 
@@ -135,7 +146,7 @@ def build_from_repos(
         authors_str = f"<strong>Author:</strong> {authors}"
 
         thumbnail = repo_dict["thumbnail"]
-        thumbnail_url = f"https://raw.githubusercontent.com/ProjectPythiaCookbooks/{repo}/main/{thumbnail}"
+        thumbnail_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/{thumbnail}"
 
         tag_dict = repo_dict["tags"]
         tag_list = sorted((itertools.chain(*tag_dict.values())))

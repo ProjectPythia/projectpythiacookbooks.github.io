@@ -7,14 +7,14 @@ on:
       - edited
 jobs:
   validate-user-submission:
-    if: github.repository == 'ProjectPythiaCookbooks/projectpythiacookbooks.github.io' && contains(github.event.issue.labels.*.name, 'cookbook-gallery-submission')
+    if: github.repository == 'ProjectPythia/cookbook-gallery' && contains(github.event.issue.labels.*.name, 'cookbook-gallery-submission')
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash -l {0}
     steps:
       - name: Find Comment
-        uses: peter-evans/find-comment@v1
+        uses: peter-evans/find-comment@v2
         id: fc
         with:
           issue-number: ${{ github.event.issue.number }}
@@ -23,7 +23,7 @@ jobs:
 
       - name: Create comment
         if: steps.fc.outputs.comment-id == ''
-        uses: peter-evans/create-or-update-comment@v1
+        uses: peter-evans/create-or-update-comment@v2
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
@@ -33,7 +33,7 @@ jobs:
 
       - name: Update comment
         if: steps.fc.outputs.comment-id != ''
-        uses: peter-evans/create-or-update-comment@v1
+        uses: peter-evans/create-or-update-comment@v2
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
@@ -56,7 +56,7 @@ jobs:
         run: |
           python .github/workflows/collect-user-submission.py
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: submission
           path: cookbook-submission-input.txt
@@ -74,7 +74,7 @@ jobs:
         with:
           python-version: 3.8
 
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: submission
 
@@ -126,7 +126,7 @@ jobs:
           branch: cookbook-gallery-${{ github.event.issue.number }}
 
       - name: Find Comment
-        uses: peter-evans/find-comment@v1
+        uses: peter-evans/find-comment@v2
         id: fc
         with:
           issue-number: ${{ github.event.issue.number }}
@@ -135,7 +135,7 @@ jobs:
 
       - name: Create comment
         if: steps.fc.outputs.comment-id == ''
-        uses: peter-evans/create-or-update-comment@v1
+        uses: peter-evans/create-or-update-comment@v2
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
@@ -145,7 +145,7 @@ jobs:
 
       - name: Update comment
         if: steps.fc.outputs.comment-id != ''
-        uses: peter-evans/create-or-update-comment@v1
+        uses: peter-evans/create-or-update-comment@v2
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
