@@ -158,7 +158,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/intake-cookbook/main/thumbnail.svg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/intake-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Intake Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> the <a href="https://projectpythia.org/">Project Pythia</a> Community</p>
+<p class="card-subtitle"><strong>Author:</strong> James Morley</p>
 <br/>
 <p class="my-2">This cookbook shows examples of using and creating Intake catalogs to access data.</p>
 </div>
