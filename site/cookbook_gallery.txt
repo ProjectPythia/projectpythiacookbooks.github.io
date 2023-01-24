@@ -3,3 +3,4 @@ cmip6-cookbook
 HRRR-AWS-cookbook
 radar-cookbook
 intake-cookbook
+landsat-ml-cookbook
