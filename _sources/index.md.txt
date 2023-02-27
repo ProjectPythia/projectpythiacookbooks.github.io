@@ -33,7 +33,7 @@ Domains
 Packages
 </button>
 <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
-<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=Py-Art onchange="change();">&nbsp;Py-Art</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvPlot onchange="change();">&nbsp;hvPlot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-esm onchange="change();">&nbsp;intake-esm</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-markdown onchange="change();">&nbsp;intake-markdown</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-xarray onchange="change();">&nbsp;intake-xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;xarray</label></li>
+<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=Py-Art onchange="change();">&nbsp;Py-Art</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvPlot onchange="change();">&nbsp;hvPlot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-esm onchange="change();">&nbsp;intake-esm</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-esm,-xesmf onchange="change();">&nbsp;intake-esm, xesmf</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-markdown onchange="change();">&nbsp;intake-markdown</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-xarray onchange="change();">&nbsp;intake-xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;xarray</label></li>
 </ul>
 </div>
 
@@ -75,7 +75,7 @@ Packages
 
 
 ---
-:column: + tagged-card climate intake-esm
+:column: + tagged-card climate intake-esm,-xesmf
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/cmip6-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
@@ -91,7 +91,7 @@ Packages
 +++
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">climate</span>
-<span class="badge bg-primary mybadges">intake-esm</span>
+<span class="badge bg-primary mybadges">intake-esm,-xesmf</span>
 <div
     <a class="reference external" href="https://github.com/ProjectPythia/cmip6-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/cmip6-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="http://binder.mypythia.org/v2/gh/ProjectPythia/cmip6-cookbook.git/main"><img alt="Binder" src="http://binder.mypythia.org/badge_logo.svg" /></a>
