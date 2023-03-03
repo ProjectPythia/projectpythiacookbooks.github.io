@@ -4,3 +4,4 @@ HRRR-AWS-cookbook
 radar-cookbook
 intake-cookbook
 landsat-ml-cookbook
+kerchunk-cookbook
