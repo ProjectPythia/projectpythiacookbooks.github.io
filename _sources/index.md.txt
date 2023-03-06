@@ -22,7 +22,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 Domains
 </button>
 <ul class="dropdown-menu" aria-labelledby="domainsDropdown">
-<li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=AWS-cloud onchange="change();">&nbsp;AWS cloud</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=Data-access onchange="change();">&nbsp;Data access</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=HRRR-model onchange="change();">&nbsp;HRRR model</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate onchange="change();">&nbsp;climate</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=ml onchange="change();">&nbsp;ml</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=radar onchange="change();">&nbsp;radar</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=satellite onchange="change();">&nbsp;satellite</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=zarr onchange="change();">&nbsp;zarr</label></li>
+<li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=AWS-cloud onchange="change();">&nbsp;AWS cloud</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=Data-access onchange="change();">&nbsp;Data access</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=HRRR-model onchange="change();">&nbsp;HRRR model</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate onchange="change();">&nbsp;climate</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-science onchange="change();">&nbsp;data science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=machine-learning onchange="change();">&nbsp;machine learning</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=ml onchange="change();">&nbsp;ml</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=oceanography onchange="change();">&nbsp;oceanography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=radar onchange="change();">&nbsp;radar</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=satellite onchange="change();">&nbsp;satellite</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=scientific-software-engineering onchange="change();">&nbsp;scientific software engineering</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=zarr onchange="change();">&nbsp;zarr</label></li>
 </ul>
 </div>
 
@@ -33,7 +33,7 @@ Domains
 Packages
 </button>
 <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
-<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=Py-Art onchange="change();">&nbsp;Py-Art</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvPlot onchange="change();">&nbsp;hvPlot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-esm onchange="change();">&nbsp;intake-esm</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-esm,-xesmf onchange="change();">&nbsp;intake-esm, xesmf</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-markdown onchange="change();">&nbsp;intake-markdown</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-xarray onchange="change();">&nbsp;intake-xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;xarray</label></li>
+<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=IPython onchange="change();">&nbsp;IPython</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=Py-Art onchange="change();">&nbsp;Py-Art</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvPlot onchange="change();">&nbsp;hvPlot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-esm onchange="change();">&nbsp;intake-esm</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-markdown onchange="change();">&nbsp;intake-markdown</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-xarray onchange="change();">&nbsp;intake-xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=matplotlib onchange="change();">&nbsp;matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=numpy onchange="change();">&nbsp;numpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=tensorflow onchange="change();">&nbsp;tensorflow</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xbatcher onchange="change();">&nbsp;xbatcher</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xesmf onchange="change();">&nbsp;xesmf</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=zarr onchange="change();">&nbsp;zarr</label></li>
 </ul>
 </div>
 
@@ -75,7 +75,7 @@ Packages
 
 
 ---
-:column: + tagged-card climate intake-esm,-xesmf
+:column: + tagged-card climate intake-esm xesmf
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/cmip6-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
@@ -91,7 +91,8 @@ Packages
 +++
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">climate</span>
-<span class="badge bg-primary mybadges">intake-esm,-xesmf</span>
+<span class="badge bg-primary mybadges">intake-esm</span>
+<span class="badge bg-primary mybadges">xesmf</span>
 <div
     <a class="reference external" href="https://github.com/ProjectPythia/cmip6-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/cmip6-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="http://binder.mypythia.org/v2/gh/ProjectPythia/cmip6-cookbook.git/main"><img alt="Binder" src="http://binder.mypythia.org/badge_logo.svg" /></a>
@@ -204,6 +205,41 @@ Packages
 <div
     <a class="reference external" href="https://github.com/ProjectPythia/landsat-ml-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/landsat-ml-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="http://binder.mypythia.org/v2/gh/ProjectPythia/landsat-ml-cookbook.git/main"><img alt="Binder" src="http://binder.mypythia.org/badge_logo.svg" /></a>
+    </div>
+</div>
+
+
+---
+:column: + tagged-card IPython data-science intake machine-learning matplotlib numpy oceanography scientific-software-engineering tensorflow xarray xbatcher zarr
+
+<div class="d-flex gallery-card">
+<img src="https://raw.githubusercontent.com/ProjectPythia/xbatcher-ML-1-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://projectpythia.org/xbatcher-ML-1-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">xbatcher for Machine Learning Part 1</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Christopher Dupuis</p>
+<br/>
+<p class="my-2">A complete workflow for a convolutional neural network using xbatcher.</p>
+</div>
+</div>
+
+
++++
+<div class="tagsandbadges">
+<span class="badge bg-primary mybadges">IPython</span>
+<span class="badge bg-primary mybadges">data-science</span>
+<span class="badge bg-primary mybadges">intake</span>
+<span class="badge bg-primary mybadges">machine-learning</span>
+<span class="badge bg-primary mybadges">matplotlib</span>
+<span class="badge bg-primary mybadges">numpy</span>
+<span class="badge bg-primary mybadges">oceanography</span>
+<span class="badge bg-primary mybadges">scientific-software-engineering</span>
+<span class="badge bg-primary mybadges">tensorflow</span>
+<span class="badge bg-primary mybadges">xarray</span>
+<span class="badge bg-primary mybadges">xbatcher</span>
+<span class="badge bg-primary mybadges">zarr</span>
+<div
+    <a class="reference external" href="https://github.com/ProjectPythia/xbatcher-ML-1-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/xbatcher-ML-1-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
+    <a class="reference external" href="http://binder.mypythia.org/v2/gh/ProjectPythia/xbatcher-ML-1-cookbook.git/main"><img alt="Binder" src="http://binder.mypythia.org/badge_logo.svg" /></a>
     </div>
 </div>
 
