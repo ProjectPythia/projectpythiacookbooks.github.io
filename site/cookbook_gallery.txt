@@ -5,3 +5,4 @@ radar-cookbook
 intake-cookbook
 landsat-ml-cookbook
 kerchunk-cookbook
+xbatcher-ML-1-cookbook
