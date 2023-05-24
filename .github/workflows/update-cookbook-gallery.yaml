@@ -23,7 +23,7 @@ jobs:
 
       - name: Create comment
         if: steps.fc.outputs.comment-id == ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
@@ -33,7 +33,7 @@ jobs:
 
       - name: Update comment
         if: steps.fc.outputs.comment-id != ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v3
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
@@ -110,9 +110,15 @@ jobs:
           python -m pre_commit run --all-files
           exit 0
 
+      - uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
       - name: Create pull request
         id: cpr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           commit-message: 'Update cookbook gallery'
           committer: GitHub <noreply@github.com>
@@ -122,7 +128,7 @@ jobs:
           title: 'Update cookbook gallery per #${{ github.event.issue.number }}'
           body: |
             Update cookbook gallery as requested in #${{ github.event.issue.number }}. Closes #${{ github.event.issue.number }}.
-          token: ${{ secrets.PAT }}
+          token: ${{ steps.generate-token.outputs.token }}
           branch: cookbook-gallery-${{ github.event.issue.number }}
 
       - name: Find Comment
@@ -135,7 +141,7 @@ jobs:
 
       - name: Create comment
         if: steps.fc.outputs.comment-id == ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
@@ -145,7 +151,7 @@ jobs:
 
       - name: Update comment
         if: steps.fc.outputs.comment-id != ''
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v3
         with:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           edit-mode: replace
