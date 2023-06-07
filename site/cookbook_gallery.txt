@@ -6,3 +6,4 @@ intake-cookbook
 landsat-ml-cookbook
 kerchunk-cookbook
 xbatcher-ML-1-cookbook
+Web Map Tile Service (WMTS) Cookbook
