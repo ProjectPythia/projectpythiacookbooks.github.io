@@ -123,4 +123,7 @@ myst_url_schemes = ["http", "https", "mailto"]
 jupyter_execute_notebooks = "off"
 myst_heading_anchors = 3
 
+# Don't run the link checker on immutable DOI links
+linkcheck_ignore = ['https://doi.org/*']
+
 # CUSTOM SCRIPTS ==============================================================
