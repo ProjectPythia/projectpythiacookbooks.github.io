@@ -1,0 +1,9 @@
+name: trigger-link-check
+on:
+  pull_request:
+
+jobs:
+  link-check:
+    uses: ProjectPythia/projectpythia.github.io/.github/workflows/sphinx-link-checker.yaml@main
+    with:
+      path_to_source: 'site'
