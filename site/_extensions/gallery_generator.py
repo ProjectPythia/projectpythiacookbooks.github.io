@@ -16,14 +16,12 @@ def _grab_binder_link(repo):
     url = root + end
     return root, url
 
-
 def _generate_status_badge_html(repo, github_url):
     binder_root, binder_link = _grab_binder_link(repo)
     return f"""
     <a class="reference external" href="{github_url}/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="{github_url}/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="{binder_link}"><img alt="Binder" src="{binder_root}/badge_logo.svg" /></a>
     """
-
 
 def generate_repo_dicts(all_items):
 
@@ -79,7 +77,6 @@ def _generate_tag_set(repo_dicts, tag_key=None):
 
     return tag_set
 
-
 def _generate_tag_menu(repo_dicts, tag_key):
 
     tag_set = _generate_tag_set(repo_dicts, tag_key)
@@ -102,7 +99,6 @@ def _generate_tag_menu(repo_dicts, tag_key):
 </div>
 """
 
-
 def generate_menu(repo_dicts, submit_btn_txt=None, submit_btn_link=None):
 
     key_list = _generate_sorted_tag_keys(repo_dicts)
@@ -120,7 +116,6 @@ def generate_menu(repo_dicts, submit_btn_txt=None, submit_btn_link=None):
     menu_html += "</div>\n"
     menu_html += '<script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>\n'
     return menu_html
-
 
 def build_from_repos(
     repo_dicts,
