@@ -60,7 +60,9 @@ def generate_repo_dicts(all_items):
 
             cookbook_title = citation_dict["title"]
             description = citation_dict["description"]
-            authors = citation_dict["creators"]
+            creators = citation_dict["creators"]
+            names = [item.get("name") for item in creators]
+            authors = ", ".join(names)
 
             gallery_info_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_gallery_info.yml"
             gallery_info_dict = yaml.safe_load(urllib.request.urlopen(gallery_info_url))
