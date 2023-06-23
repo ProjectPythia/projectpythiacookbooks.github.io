@@ -10,6 +10,6 @@ dependencies:
 - pyyaml
 - pre-commit
 - sphinx-panels
+- cffconvert
 - pip:
   - sphinx-pythia-theme
-  - cffconvert
