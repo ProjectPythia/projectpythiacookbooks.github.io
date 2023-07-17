@@ -1,5 +1,7 @@
 import itertools
+import json
 import pathlib
+import subprocess
 import urllib.request
 from textwrap import dedent
 
@@ -8,10 +10,14 @@ from truncatehtml import truncate
 
 
 def _grab_binder_link(repo):
-    config_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_config.yml"
+    config_url = (
+        f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_config.yml"
+    )
     config = urllib.request.urlopen(config_url)
     config_dict = yaml.safe_load(config)
-    root = config_dict["sphinx"]["config"]["html_theme_options"]["launch_buttons"]["binderhub_url"]
+    root = config_dict["sphinx"]["config"]["html_theme_options"]["launch_buttons"][
+        "binderhub_url"
+    ]
     end = f"/v2/gh/ProjectPythia/{repo}.git/main"
     url = root + end
     return root, url
@@ -25,6 +31,20 @@ def _generate_status_badge_html(repo, github_url):
     """
 
 
+def _run_cffconvert(command):
+    process = subprocess.Popen(
+        command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+    )
+    stdout, stderr = process.communicate()
+
+    if process.returncode == 0:
+        output_dict = json.loads(stdout.decode("utf-8"))
+        return output_dict
+    else:
+        error_message = stderr.decode("utf-8").strip()
+        raise RuntimeError(f"cffconvert command failed: {error_message}")
+
+
 def generate_repo_dicts(all_items):
 
     repo_dicts = []
@@ -33,15 +53,36 @@ def generate_repo_dicts(all_items):
         github_url = f"https://github.com/ProjectPythia/{repo}"
         cookbook_url = f"https://projectpythia.org/{repo}/README.html"
 
-        config_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_config.yml"
-        config = urllib.request.urlopen(config_url)
-        config_dict = yaml.safe_load(config)
+        try:
+            citation_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/CITATION.cff"
+            cffconvert_command = f"cffconvert -f zenodo -u {citation_url}"
+            citation_dict = _run_cffconvert(cffconvert_command)
 
-        cookbook_title = config_dict["title"]
-        authors = config_dict["author"]
-        thumbnail = config_dict["thumbnail"]
-        description = config_dict["description"]
-        tag_dict = {k: v for k, v in config_dict["tags"].items() if v[0] != None}
+            cookbook_title = citation_dict["title"]
+            description = citation_dict["description"]
+            creators = citation_dict["creators"]
+            names = [item.get("name") for item in creators]
+            authors = ", ".join(names)
+
+            gallery_info_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_gallery_info.yml"
+            gallery_info_dict = yaml.safe_load(urllib.request.urlopen(gallery_info_url))
+            thumbnail = gallery_info_dict["thumbnail"]
+            tag_dict = {
+                k: v for k, v in gallery_info_dict["tags"].items() if v[0] is not None
+            }
+
+        except:
+            config_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_config.yml"
+            config = urllib.request.urlopen(config_url)
+            config_dict = yaml.safe_load(config)
+
+            cookbook_title = config_dict["title"]
+            description = config_dict["description"]
+            authors = config_dict["author"]
+            thumbnail = config_dict["thumbnail"]
+            tag_dict = {
+                k: v for k, v in config_dict["tags"].items() if v[0] is not None
+            }
 
         repo_dict = {
             "repo": repo,
@@ -146,7 +187,9 @@ def build_from_repos(
         authors_str = f"<strong>Author:</strong> {authors}"
 
         thumbnail = repo_dict["thumbnail"]
-        thumbnail_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/{thumbnail}"
+        thumbnail_url = (
+            f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/{thumbnail}"
+        )
 
         tag_dict = repo_dict["tags"]
         tag_list = sorted((itertools.chain(*tag_dict.values())))

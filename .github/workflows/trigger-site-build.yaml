@@ -1,13 +1,14 @@
 name: trigger-site-build
 on:
   pull_request:
-  workflow_dispatch:
 
 jobs:
   build:
-    uses: ./.github/workflows/build-site.yaml
+    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
+      environment_file: 'environment.yml'
       environment_name: pythia-tutorial-dev
-      environment_file: environment.yml
-      path_to_source: ./site
-      use_cached_environment: 'true'  # This is default, not strickly needed. Set to 'false' to always build a new environment
+      artifact_name: book-zip-${{ github.event.number }}
+      path_to_notebooks: 'site'
+      build_command: 'make -j4 html'
+      # Other input options are possible, see ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml
