@@ -179,6 +179,7 @@ def build_from_repos(
         repo = repo_dict["repo"]
         github_url = repo_dict["github_url"]
         status_badges = _generate_status_badge_html(repo, github_url)
+        print(status_badges)
 
         cookbook_url = repo_dict["cookbook_url"]
         cookbook_title = repo_dict["cookbook_title"]
@@ -240,7 +241,7 @@ def build_from_repos(
 +++
 <div class="tagsandbadges">
 {tags}
-<div{status_badges}</div>
+<div>{status_badges}</div>
 </div>
 
 """
