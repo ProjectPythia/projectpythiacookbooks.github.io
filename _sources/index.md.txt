@@ -69,7 +69,7 @@ Packages
 <span class="badge bg-primary mybadges">dask</span>
 <span class="badge bg-primary mybadges">intake-esm</span>
 <span class="badge bg-primary mybadges">xarray</span>
-<div
+<div>
     <a class="reference external" href="https://github.com/ProjectPythia/cesm-lens-aws-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/cesm-lens-aws-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/cesm-lens-aws-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg" /></a>
     </div>
@@ -95,7 +95,7 @@ Packages
 <span class="badge bg-primary mybadges">climate</span>
 <span class="badge bg-primary mybadges">intake-esm</span>
 <span class="badge bg-primary mybadges">xesmf</span>
-<div
+<div>
     <a class="reference external" href="https://github.com/ProjectPythia/cmip6-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/cmip6-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/cmip6-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg" /></a>
     </div>
@@ -122,7 +122,7 @@ Packages
 <span class="badge bg-primary mybadges">HRRR-model</span>
 <span class="badge bg-primary mybadges">xarray</span>
 <span class="badge bg-primary mybadges">zarr</span>
-<div
+<div>
     <a class="reference external" href="https://github.com/ProjectPythia/HRRR-AWS-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/HRRR-AWS-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/HRRR-AWS-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg" /></a>
     </div>
@@ -147,7 +147,7 @@ Packages
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">Py-Art</span>
 <span class="badge bg-primary mybadges">radar</span>
-<div
+<div>
     <a class="reference external" href="https://github.com/ProjectPythia/radar-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/radar-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/radar-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg" /></a>
     </div>
@@ -174,7 +174,7 @@ Packages
 <span class="badge bg-primary mybadges">intake</span>
 <span class="badge bg-primary mybadges">intake-markdown</span>
 <span class="badge bg-primary mybadges">intake-xarray</span>
-<div
+<div>
     <a class="reference external" href="https://github.com/ProjectPythia/intake-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/intake-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/intake-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg" /></a>
     </div>
@@ -204,7 +204,7 @@ Packages
 <span class="badge bg-primary mybadges">ml</span>
 <span class="badge bg-primary mybadges">satellite</span>
 <span class="badge bg-primary mybadges">xarray</span>
-<div
+<div>
     <a class="reference external" href="https://github.com/ProjectPythia/landsat-ml-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/landsat-ml-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="http://binder.mypythia.org/v2/gh/ProjectPythia/landsat-ml-cookbook.git/main"><img alt="Binder" src="http://binder.mypythia.org/badge_logo.svg" /></a>
     </div>
@@ -234,7 +234,7 @@ Packages
 <span class="badge bg-primary mybadges">kerchunk</span>
 <span class="badge bg-primary mybadges">xarray</span>
 <span class="badge bg-primary mybadges">zarr</span>
-<div
+<div>
     <a class="reference external" href="https://github.com/ProjectPythia/kerchunk-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/kerchunk-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/kerchunk-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg" /></a>
     </div>
@@ -269,7 +269,7 @@ Packages
 <span class="badge bg-primary mybadges">xarray</span>
 <span class="badge bg-primary mybadges">xbatcher</span>
 <span class="badge bg-primary mybadges">zarr</span>
-<div
+<div>
     <a class="reference external" href="https://github.com/ProjectPythia/xbatcher-ML-1-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/xbatcher-ML-1-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="http://binder.mypythia.org/v2/gh/ProjectPythia/xbatcher-ML-1-cookbook.git/main"><img alt="Binder" src="http://binder.mypythia.org/badge_logo.svg" /></a>
     </div>
@@ -297,7 +297,7 @@ Packages
 <span class="badge bg-primary mybadges">panel</span>
 <span class="badge bg-primary mybadges">xarray</span>
 <span class="badge bg-primary mybadges">zarr</span>
-<div
+<div>
     <a class="reference external" href="https://github.com/ProjectPythia/ERA5_interactive-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/ERA5_interactive-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/ERA5_interactive-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg" /></a>
     </div>
