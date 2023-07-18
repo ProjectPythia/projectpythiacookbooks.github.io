@@ -7,3 +7,4 @@ landsat-ml-cookbook
 kerchunk-cookbook
 xbatcher-ML-1-cookbook
 ERA5_interactive-cookbook
+gridding-cookbook
