@@ -1,0 +1,22 @@
+name: nightly-build
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *' # Daily “At 00:00”
+
+jobs:
+  build:
+    if: ${{ github.repository_owner == 'ProjectPythia' }}
+    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
+    with:
+      environment_file: 'environment.yml'
+      environment_name: pythia-tutorial-dev
+      path_to_notebooks: 'site'
+      build_command: 'make -j4 html'
+
+  link-check:
+    if: ${{ github.repository_owner == 'ProjectPythia' }}
+    uses: ProjectPythia/projectpythia.github.io/.github/workflows/sphinx-link-checker.yaml@main
+    with:
+      path_to_source: 'site'
