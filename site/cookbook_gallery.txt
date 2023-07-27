@@ -6,4 +6,5 @@ intake-cookbook
 landsat-ml-cookbook
 kerchunk-cookbook
 xbatcher-ML-1-cookbook
+dask-cookbook
 ERA5_interactive-cookbook
