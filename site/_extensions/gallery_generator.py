@@ -68,7 +68,7 @@ def generate_repo_dicts(all_items):
             gallery_info_dict = yaml.safe_load(urllib.request.urlopen(gallery_info_url))
             thumbnail = gallery_info_dict["thumbnail"]
             tag_dict = {
-                k: v for k, v in gallery_info_dict["tags"].items() if v is not None
+                k: v for k, v in gallery_info_dict["tags"].items() if (v is not None and v[0] is not None)
             }
 
         except:
@@ -81,7 +81,7 @@ def generate_repo_dicts(all_items):
             authors = config_dict["author"]
             thumbnail = config_dict["thumbnail"]
             tag_dict = {
-                k: v for k, v in config_dict["tags"].items() if v is not None
+                k: v for k, v in config_dict["tags"].items() if (v is not None and v[0] is not None)
             }
 
         repo_dict = {
