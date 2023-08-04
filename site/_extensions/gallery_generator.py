@@ -1,11 +1,5 @@
-import itertools
-import json
-import pathlib
-import subprocess
-import urllib.request
+import itertools, json, yaml, pathlib, subprocess, requests
 from textwrap import dedent
-
-import yaml
 from truncatehtml import truncate
 
 
@@ -13,7 +7,7 @@ def _grab_binder_link(repo):
     config_url = (
         f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_config.yml"
     )
-    config = urllib.request.urlopen(config_url)
+    config = requests.get(config_url).content
     config_dict = yaml.safe_load(config)
     root = config_dict["sphinx"]["config"]["html_theme_options"]["launch_buttons"][
         "binderhub_url"
@@ -25,11 +19,17 @@ def _grab_binder_link(repo):
 
 def _generate_status_badge_html(repo, github_url):
     binder_root, binder_link = _grab_binder_link(repo)
+    github_id = _grab_github_id(repo)
     return f"""
     <a class="reference external" href="{github_url}/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="{github_url}/actions/workflows/nightly-build.yaml/badge.svg" /></a>
     <a class="reference external" href="{binder_link}"><img alt="Binder" src="{binder_root}/badge_logo.svg" /></a>
+    <a class="reference external" href="https://zenodo.org/badge/latestdoi/{github_id}"><img alt="DOI" src="https://zenodo.org/badge/{github_id}.svg" /></a>
     """
 
+def _grab_github_id(repo):
+    github_api_url = f"https://api.github.com/repos/ProjectPythia/{repo}"
+    response = requests.get(github_api_url)
+    return response.json()['id']
 
 def _run_cffconvert(command):
     process = subprocess.Popen(
@@ -65,7 +65,7 @@ def generate_repo_dicts(all_items):
             authors = ", ".join(names)
 
             gallery_info_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_gallery_info.yml"
-            gallery_info_dict = yaml.safe_load(urllib.request.urlopen(gallery_info_url))
+            gallery_info_dict = yaml.safe_load(requests.get(gallery_info_url).content)
             thumbnail = gallery_info_dict["thumbnail"]
             tag_dict = {
                 k: v for k, v in gallery_info_dict["tags"].items() if (v is not None and v[0] is not None)
@@ -73,7 +73,7 @@ def generate_repo_dicts(all_items):
 
         except:
             config_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_config.yml"
-            config = urllib.request.urlopen(config_url)
+            config = requests.get(config_url).content
             config_dict = yaml.safe_load(config)
 
             cookbook_title = config_dict["title"]
@@ -240,7 +240,7 @@ def build_from_repos(
 +++
 <div class="tagsandbadges">
 {tags}
-<div{status_badges}</div>
+<div>{status_badges}</div>
 </div>
 
 """
