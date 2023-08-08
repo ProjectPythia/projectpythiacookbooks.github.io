@@ -102,6 +102,7 @@ html_theme_options = {
         {"name": "Cookbooks", "url": "https://cookbooks.projectpythia.org/"},
         {"name": "Resources", "url": "https://projectpythia.org/resource-gallery.html"},
         {"name": "Community", "url": "https://projectpythia.org/#join-us"},
+        {"name": "Blog", "url": "https://projectpythia.org/blog.html"},
     ],
     "page_layouts": {
         "index": "page-standalone.html",
