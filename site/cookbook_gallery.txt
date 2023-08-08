@@ -10,3 +10,4 @@ dask-cookbook
 ERA5_interactive-cookbook
 web-map-feature-services-cookbook
 interactive-sentinel-2-cookbook
+gridding-cookbook

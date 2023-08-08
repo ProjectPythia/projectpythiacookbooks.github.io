@@ -2,40 +2,33 @@ import json
 import os
 import typing
 
-import pydantic
+class Submission:
+    def __init__(self, repo: str):
+        self.repo = repo
 
-
-class Submission(pydantic.BaseModel):
-    repo: str
-
-
-@pydantic.dataclasses.dataclass
 class IssueInfo:
-    gh_event_path: pydantic.FilePath
-    submission: Submission = pydantic.Field(default=None)
+    def __init__(self, gh_event_path: str):
+        self.gh_event_path = gh_event_path
 
-    def __post_init_post_parse__(self):
+    def get_event_data(self):
         with open(self.gh_event_path) as f:
-            self.data = json.load(f)
-        print(self.data)
+            return json.load(f)
 
     def create_submission(self):
-        self._create_submission_input()
-        return self
+        event_data = self.get_event_data()
+        issue_body = event_data["issue"]["body"]
+        submission = self._create_submission_input(issue_body)
+        return submission
 
-    def _create_submission_input(self):
-        text = self.data["issue"]["body"]
-
+    def _create_submission_input(self, text: str):
         left = "### Root Repository Name"
         right = "### Did you check"
         repo = text[text.index(left) + len(left) : text.index(right)].strip()
-
-        self.submission = Submission(repo=repo)
+        return Submission(repo=repo)
 
 
 if __name__ == "__main__":
-
-    issue = IssueInfo(gh_event_path=os.environ["GITHUB_EVENT_PATH"]).create_submission()
-    input = issue.submission.dict()
+    gh_event_path = os.environ["GITHUB_EVENT_PATH"]
+    issue = IssueInfo(gh_event_path=gh_event_path).create_submission()
     with open("cookbook-submission-input.txt", "w") as f:
-        f.write(input["repo"])
+        f.write(issue.repo)
