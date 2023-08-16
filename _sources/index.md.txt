@@ -226,7 +226,7 @@ Packages
 <a href="https://projectpythia.org/kerchunk-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Kerchunk Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Hagen, Norland Raphael, Kerchunk Cookbook contributors</p>
 <br/>
-<p class="my-2">A Project Pythia Cookbook for Kerchunk.</p>
+<p class="my-2">Kerchunk provides cloud-friendly access to archival data. With Kerchunk you can read collections of legacy file formats (NetCDF, GRIB2 etc.) as if they were ARCO (Analysis-Ready Cloud-Optimized) formats such as Zarr, without creating a copy of the original dataset.</p>
 </div>
 </div>
 
