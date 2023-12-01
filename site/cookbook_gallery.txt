@@ -12,3 +12,4 @@ web-map-feature-services-cookbook
 interactive-sentinel-2-cookbook
 gridding-cookbook
 vapor-python-cookbook
+advanced-viz-cookbook
