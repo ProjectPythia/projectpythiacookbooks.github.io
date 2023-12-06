@@ -13,3 +13,4 @@ interactive-sentinel-2-cookbook
 gridding-cookbook
 vapor-python-cookbook
 advanced-viz-cookbook
+unstructured-grid-viz-cookbook
