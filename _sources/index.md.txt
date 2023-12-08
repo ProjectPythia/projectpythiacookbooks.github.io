@@ -211,7 +211,7 @@ Packages
 <span class="badge bg-primary mybadges">xarray</span>
 <div>
     <a class="reference external" href="https://github.com/ProjectPythia/landsat-ml-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/landsat-ml-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
-    <a class="reference external" href="http://binder.mypythia.org/v2/gh/ProjectPythia/landsat-ml-cookbook.git/main"><img alt="Binder" src="http://binder.mypythia.org/badge_logo.svg" /></a>
+    <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/landsat-ml-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg" /></a>
     <a class="reference external" href="https://zenodo.org/badge/latestdoi/563445694"><img alt="DOI" src="https://zenodo.org/badge/563445694.svg" /></a>
     </div>
 </div>
@@ -278,7 +278,7 @@ Packages
 <span class="badge bg-primary mybadges">zarr</span>
 <div>
     <a class="reference external" href="https://github.com/ProjectPythia/xbatcher-ML-1-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/xbatcher-ML-1-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
-    <a class="reference external" href="https://binder.projectpythia.org//v2/gh/ProjectPythia/xbatcher-ML-1-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org//badge_logo.svg" /></a>
+    <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/xbatcher-ML-1-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg" /></a>
     <a class="reference external" href="https://zenodo.org/badge/latestdoi/597998597"><img alt="DOI" src="https://zenodo.org/badge/597998597.svg" /></a>
     </div>
 </div>
