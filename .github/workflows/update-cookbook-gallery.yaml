@@ -43,7 +43,7 @@ jobs:
             We're currently running [validation checks](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) to make sure the contents of your submission are okay. An update will be posted here shortly once the validation checks are passing.
 
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.8
 
@@ -70,7 +70,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.8
 
