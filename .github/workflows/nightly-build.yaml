@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     if: ${{ github.repository_owner == 'ProjectPythia' }}
-    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
+    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@try_updated_theme
     with:
       environment_file: 'environment.yml'
       environment_name: pythia-tutorial-dev
@@ -17,6 +17,6 @@ jobs:
 
   link-check:
     if: ${{ github.repository_owner == 'ProjectPythia' }}
-    uses: ProjectPythia/projectpythia.github.io/.github/workflows/sphinx-link-checker.yaml@main
+    uses: ProjectPythia/projectpythia.github.io/.github/workflows/sphinx-link-checker.yaml@try_updated_theme
     with:
       path_to_source: 'site'
