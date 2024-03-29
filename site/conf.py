@@ -33,7 +33,7 @@ copyright = "2024"
 # ones.
 extensions = [
     "myst_nb",
-    "sphinx_panels",
+    "sphinx_design",
     "cookbook_gallery_generator",
 ]
 
@@ -122,9 +122,6 @@ html_theme_options = {
     },
     'footer_start': ['footer-logos', 'footer-menu', 'footer-info', 'footer-extra'],
 }
-
-# Panels config
-panels_add_bootstrap_css = False
 
 # MyST config
 myst_enable_extensions = ["amsmath", "colon_fence", "deflist", "html_image"]
