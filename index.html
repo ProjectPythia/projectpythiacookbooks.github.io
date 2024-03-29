@@ -1,86 +1,117 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="./" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Cookbooks Gallery</title>
-    
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
-
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    
-      
-
-    
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-pythia-theme.min.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
-    
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
-
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-T52X8HNYE8"></script>
-<script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){ dataLayer.push(arguments); }
-                    gtag('js', new Date());
-                    gtag('config', 'G-T52X8HNYE8');
-                </script>
-
-  </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="132">
-    <div class="container-fluid" id="shim"></div>
-    <div class="container-fluid" id="banner"></div>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top bd-navbar shadow" id="navbar-main"><div class="container-xl">
-
-  <div id="navbar-start">
-    
-    
-
-<a class="navbar-brand" href="https://projectpythia.org">
-  <img src="_static/pythia_logo-white-rtext.svg" class="logo" alt="logo">
-</a>
-
-
-    
-  </div>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <div id="navbar-collapsible" class=" collapse navbar-collapse">
-    <div id="navbar-center" class="mr-auto">
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-pythia-theme.min.css?v=e502140d" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=3f4ebbca" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-T52X8HNYE8"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-T52X8HNYE8');
+            </script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-T52X8HNYE8');
+            </script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <link rel="icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="29 March 2024"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+
+  
+  <div class="pst-scroll-pixel-helper"></div>
+    <header class="bd-header navbar navbar-dark navbar-expand-lg bg-dark fixed-top bd-navbar shadow" id="navbar-main">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+   
+
+<a class="navbar-brand logo" href="https://projectpythia.org">
+  
+  
+  
+  
+  
+    
+    
       
-      <div class="navbar-center-item">
-        <ul id="navbar-main-elements" class="navbar-nav">
+    
+    
+    <img src="_static/pythia_logo-white-rtext.svg" class="logo__image only-light" alt=" - Home"/>
+    <script>document.write(`<img src="_static/pythia_logo-white-rtext.svg" class="logo__image only-dark" alt=" - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><ul id="navbar-main-elements" class="navbar-nav">
   
   <li class="nav-item">
     
@@ -125,49 +156,71 @@
   </li>
   
   
-</ul>
-      </div>
+</ul></div>
       
     </div>
-
-    <div id="navbar-end">
+    
+    
+    <div class="navbar-header-items__end">
       
-      <div class="navbar-end-item">
-        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/ProjectPythia" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
-            <label class="sr-only">GitHub</label>
-          </a>
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/ProjectPythia" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/project_pythia" rel="noopener" target="_blank" title="Twitter">
-            <span><i class="fab fa-twitter-square"></i></span>
-            <label class="sr-only">Twitter</label>
-          </a>
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/project_pythia" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw" rel="noopener" target="_blank" title="YouTube">
-            <span><i class="fab fa-youtube-square"></i></span>
-            <label class="sr-only">YouTube</label>
-          </a>
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw" title="YouTube" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-youtube-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">YouTube</span></a>
         </li>
-      </ul>
-      </div>
+</ul></div>
       
     </div>
+    
   </div>
+  
+  
+
+  
 </div>
-    </nav>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="d-none col-12 col-md-1 col-xl-2 bd-sidebar no-sidebar"></div>
-        
-<main class="col p-0 bd-content standalone-main overflow-auto" role="main">
+
+    </header>
+  <div class="container-fluid">
+    <div class="row"><main class="col p-0 bd-content standalone-main overflow-auto" role="main">
   <div id="main-content" class="row">
     <div class="col p-0">
-      <div class="container-fluid sectionwrapper-1"><div class="container section-1"><div class="section" id="cookbooks-gallery">
-<h1 class="display-1">Cookbooks Gallery<a class="headerlink" href="#cookbooks-gallery" title="Permalink to this headline"><i class="fas fa-link"></i></a></h1>
+      <div class="container-fluid sectionwrapper-1"><div class="container section-1"><section id="cookbooks-gallery">
+<h1 class="display-1">Cookbooks Gallery<a class="headerlink" href="#cookbooks-gallery" title="Link to this heading"><i class="fas fa-link"></i></a></h1>
+<p>=================</p>
 <p>Pythia Cookbooks provide example workflows on more advanced and domain-specific problems developed by the Pythia community. Cookbooks build on top of skills you learn in <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">Pythia Foundations</a>.</p>
 <p>Cookbooks are created from Jupyter Notebooks that we strive to binderize so each Cookbook can be <a class="reference external" href="https://foundations.projectpythia.org/preamble/how-to-use.html#interacting-with-jupyter-notebooks-in-the-cloud-via-binder">executed in the cloud with a single click from your browser</a>, but in some instances executing a Cookbook will require <a class="reference external" href="https://foundations.projectpythia.org/preamble/how-to-use.html#interacting-with-jupyter-books-locally">running the notebooks locally</a>.</p>
 <p>Interested in contributing a new Cookbook or contributing to an existing Cookbook? Great! Please see the <a class="reference external" href="https://github.com/ProjectPythia/.github/blob/main/.github/CONTRIBUTING.md">Project Pythia Cookbook Contributor’s Guide</a>, and consider opening a discussion under the <a class="reference external" href="https://discourse.pangeo.io/c/education/project-pythia/60">Project Pythia category of the Pangeo Discourse</a>.</p>
@@ -196,22 +249,21 @@ Packages
 </div>
 </div>
 <script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>
-<div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-12 tagged-card climate dask intake-esm xarray docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-4 sd-g-xs-4 sd-g-sm-4 sd-g-md-4 sd-g-lg-4 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/cesm-lens-aws-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/cesm-lens-aws-cookbook/README.html"><h4 class="display-4 p-0">CESM LENS on AWS Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Banihirwe, Anderson, Bonnlander, Brian, de La Beaujardière, Jeff, Henderson, Scott, CESM LENS on AWS Cookbook contributors</p>
-<br/>
-<p class="my-2">Notebooks developed to demonstrate analysis of CESM LENS data publicly available on Amazon S3 (us-west-2 region) using Xarray and Dask.</p>
+<p class="my-2">Notebooks developed to demonstrate analysis of CESM LENS data publicly available on Amazon S3 (us-west-2 region) using Xarray and Dask. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">climate</span>
 <span class="badge bg-primary mybadges">dask</span>
@@ -226,20 +278,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card climate intake-esm xesmf docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/cmip6-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/cmip6-cookbook/README.html"><h4 class="display-4 p-0">CMIP6 Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Abernathey, Ryan, Drake, Henri, Ford, Robert R., CMIP6 Cookbook contributors</p>
-<br/>
-<p class="my-2">Examples of analysis of Google Cloud CMIP6 data using Pangeo tools.</p>
+<p class="my-2">Examples of analysis of Google Cloud CMIP6 data using Pangeo tools. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">climate</span>
 <span class="badge bg-primary mybadges">intake-esm</span>
@@ -253,20 +304,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card AWS-cloud HRRR-model xarray zarr docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/HRRR-AWS-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/HRRR-AWS-cookbook/README.html"><h4 class="display-4 p-0">HRRR AWS Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Tyle, Kevin, HRRR-AWS Cookbook contributors</p>
-<br/>
-<p class="my-2">A cookbook for working with AWS-served HRRR model output data.</p>
+<p class="my-2">A cookbook for working with AWS-served HRRR model output data. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">AWS-cloud</span>
 <span class="badge bg-primary mybadges">HRRR-model</span>
@@ -281,20 +331,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card Py-Art radar docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/radar-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/radar-cookbook/README.html"><h4 class="display-4 p-0">Radar Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Grover, Maxwell, Sherman, Zachary, Sharma, Milind, Ladino, Alfonso, Camron, Crystal, Radar Cookbook contributors</p>
-<br/>
-<p class="my-2">A cookbook meant to work with various weather radar data.</p>
+<p class="my-2">A cookbook meant to work with various weather radar data. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">Py-Art</span>
 <span class="badge bg-primary mybadges">radar</span>
@@ -307,20 +356,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card Data-access intake intake-markdown intake-xarray docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/intake-cookbook/main/thumbnail.svg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/intake-cookbook/README.html"><h4 class="display-4 p-0">Intake Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Morley, James, Intake Cookbook contributors</p>
-<br/>
-<p class="my-2">This cookbook shows examples of using and creating Intake catalogs to access data.</p>
+<p class="my-2">This cookbook shows examples of using and creating Intake catalogs to access data. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">Data-access</span>
 <span class="badge bg-primary mybadges">intake</span>
@@ -335,20 +383,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card climate dask hvPlot intake ml satellite xarray docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/landsat-ml-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/landsat-ml-cookbook/README.html"><h4 class="display-4 p-0">Landsat ML Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Roumis, Demetris, Landsat ML Cookbook contributors</p>
-<br/>
-<p class="my-2">Machine learning on Landsat data.</p>
+<p class="my-2">Machine learning on Landsat data. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">climate</span>
 <span class="badge bg-primary mybadges">dask</span>
@@ -366,20 +413,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card AWS-Cloud Data-Access HRRR-model intake kerchunk xarray zarr docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/kerchunk-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/kerchunk-cookbook/README.html"><h4 class="display-4 p-0">Kerchunk Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Hagen, Norland Raphael, Kerchunk Cookbook contributors</p>
-<br/>
-<p class="my-2">Kerchunk provides cloud-friendly access to archival data. With Kerchunk you can read collections of legacy file formats (NetCDF, GRIB2 etc.) as if they were ARCO (Analysis-Ready Cloud-Optimized) formats such as Zarr, without creating a copy of the original dataset.</p>
+<p class="my-2">Kerchunk provides cloud-friendly access to archival data. With Kerchunk you can read collections of legacy file formats (NetCDF, GRIB2 etc.) as if they were ARCO (Analysis-Ready Cloud-Optimized) formats such as Zarr, without creating a copy of the original dataset. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">AWS-Cloud</span>
 <span class="badge bg-primary mybadges">Data-Access</span>
@@ -397,20 +443,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card IPython data-science intake machine-learning matplotlib numpy oceanography scientific-software-engineering tensorflow xarray xbatcher zarr docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/xbatcher-ML-1-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/xbatcher-ML-1-cookbook/README.html"><h4 class="display-4 p-0">xbatcher for Machine Learning Part 1 Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Dupuis, Christopher, Sinha, Anirban, Abernathey, Ryan, xbatcher for Machine Learning Part 1 Cookbook contributors</p>
-<br/>
-<p class="my-2">A complete workflow for a convolutional neural network using xbatcher.</p>
+<p class="my-2">A complete workflow for a convolutional neural network using xbatcher. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">IPython</span>
 <span class="badge bg-primary mybadges">data-science</span>
@@ -433,20 +478,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card dask xarray docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/dask-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/dask-cookbook/README.html"><h4 class="display-4 p-0">Dask Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Sobhani, Negin, Brian, Vanderwende, Cherian, Deepak, Kirk, Ben, Dask Cookbook contributors</p>
-<br/>
-<p class="my-2">A cookbook for Dask workflows.</p>
+<p class="my-2">A cookbook for Dask workflows. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">dask</span>
 <span class="badge bg-primary mybadges">xarray</span>
@@ -459,20 +503,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card geoviews meteorology panel xarray zarr docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/ERA5_interactive-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/ERA5_interactive-cookbook/README.html"><h4 class="display-4 p-0">ARCO ERA-5 Interactive Visualization Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Tyle, Kevin, Barletta, Michael, ARCO ERA-5 Cookbook contributors</p>
-<br/>
-<p class="my-2">A cookbook to interactively explore and visualize ERA-5 data in ARCO format.</p>
+<p class="my-2">A cookbook to interactively explore and visualize ERA-5 data in ARCO format. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">geoviews</span>
 <span class="badge bg-primary mybadges">meteorology</span>
@@ -488,20 +531,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card Basemaps GIS Geospatial-data NASA-EarthData-GIBS Satellite-imagery Spatial-analysis cartopy geoviews hvPlot owslib panel docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/web-map-feature-services-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/web-map-feature-services-cookbook/README.html"><h4 class="display-4 p-0">Web Map / Feature Services Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Huang, Andrew, Web Map / Feature Services Cookbook contributors</p>
-<br/>
-<p class="my-2">Learn how to use web map and feature services to easily and quickly provide spatial context, without the need to download and process GBs of data!</p>
+<p class="my-2">Learn how to use web map and feature services to easily and quickly provide spatial context, without the need to download and process GBs of data! </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">Basemaps</span>
 <span class="badge bg-primary mybadges">GIS</span>
@@ -523,20 +565,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card dask geoviews hvplot interactive-visualization odc.stac panel planetary-computer satellite sentinel-2 xarray docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/interactive-sentinel-2-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/interactive-sentinel-2-cookbook/README.html"><h4 class="display-4 p-0">Sentinel-2 L2A Interactive Dashboard</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Das, Pritam, This Cookbook contributors</p>
-<br/>
-<p class="my-2">This Project Pythia Cookbook provides a recipe for building an interactive dashboard for the Sentinel-2 L2A satellite imagery using the holoviews ecosystem.</p>
+<p class="my-2">This Project Pythia Cookbook provides a recipe for building an interactive dashboard for the Sentinel-2 L2A satellite imagery using the holoviews ecosystem. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">dask</span>
 <span class="badge bg-primary mybadges">geoviews</span>
@@ -557,20 +598,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card Pyresample verde xESMF xarray docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/gridding-cookbook/main/grid_thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/gridding-cookbook/README.html"><h4 class="display-4 p-0">(re)Gridding with xarray</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Martin, Thomas, (re)Gridding with xarray contributors</p>
-<br/>
-<p class="my-2">A small collection of notebooks that explores some (re)gridding options within the Xarray ecosystem. The thumbnail image was created with the assistance of DALL·E 2.</p>
+<p class="my-2">A small collection of notebooks that explores some (re)gridding options within the Xarray ecosystem. The thumbnail image was created with the assistance of DALL·E 2. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">Pyresample</span>
 <span class="badge bg-primary mybadges">verde</span>
@@ -585,65 +625,46 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card 3D-visualizations climate numpy particles weather xarray docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
-<img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/vapor-python-cookbook/main/vapor_thumbnail.png"/>
+<img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/gridding-cookbook/main/grid_thumbnail.png"/>
 <div class="container">
-<a class="text-decoration-none" href="https://projectpythia.org/vapor-python-cookbook/README.html"><h4 class="display-4 p-0">Vapor Python Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Cherukuru, Nihanth, Jarosynski, Stanislaw 'Stas', Austin, Philip, VAPOR python cookbook contributors</p>
-<br/>
-<p class="my-2">The Visualization and Analysis Platform for Ocean, Atmosphere, and Solar Researchers (VAPOR) provides an interactive 3D visualization environment for exploratory visual analysis and the production of captivating animations and high-quality images. VAPOR runs on most UNIX and Windows systems equipped<a class="modal-btn"> ... more</a></p>
-</div>
-</div>
-<div class="modal">
-<div class="content">
-<img class="modal-img" src="https://raw.githubusercontent.com/ProjectPythia/vapor-python-cookbook/main/vapor_thumbnail.png"/>
-<h3 class="display-3">Vapor Python Cookbook</h3>
-<strong>Author:</strong> Cherukuru, Nihanth, Jarosynski, Stanislaw 'Stas', Austin, Philip, VAPOR python cookbook contributors
-<p class="my-2">The Visualization and Analysis Platform for Ocean, Atmosphere, and Solar Researchers (VAPOR) provides an interactive 3D visualization environment for exploratory visual analysis and the production of captivating animations and high-quality images. VAPOR runs on most UNIX and Windows systems equipped with modern 3D graphics cards. </p>
-<p class="my-2"><span class="badge bg-primary mybadges">3D-visualizations</span>
-<span class="badge bg-primary mybadges">climate</span>
-<span class="badge bg-primary mybadges">numpy</span>
-<span class="badge bg-primary mybadges">particles</span>
-<span class="badge bg-primary mybadges">weather</span>
-<span class="badge bg-primary mybadges">xarray</span></p>
-<p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://projectpythia.org/vapor-python-cookbook/README.html">Visit Website</a></p>
+<a class="text-decoration-none" href="https://projectpythia.org/gridding-cookbook/README.html"><h4 class="display-4 p-0">(re)Gridding with xarray</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Martin, Thomas, (re)Gridding with xarray contributors</p>
+<p class="my-2">A small collection of notebooks that explores some (re)gridding options within the Xarray ecosystem. The thumbnail image was created with the assistance of DALL·E 2. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">3D-visualizations</span>
-<span class="badge bg-primary mybadges">climate</span>
-<span class="badge bg-primary mybadges">numpy</span>
-<span class="badge bg-primary mybadges">particles</span>
-<span class="badge bg-primary mybadges">weather</span>
+<span class="badge bg-primary mybadges">Pyresample</span>
+<span class="badge bg-primary mybadges">verde</span>
+<span class="badge bg-primary mybadges">xESMF</span>
 <span class="badge bg-primary mybadges">xarray</span>
 <div>
-<a class="reference external" href="https://github.com/ProjectPythia/vapor-python-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/vapor-python-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
-<a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/vapor-python-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
-<a class="reference external" href="https://zenodo.org/badge/latestdoi/656355302"><img alt="DOI" src="https://zenodo.org/badge/656355302.svg"/></a>
+<a class="reference external" href="https://github.com/ProjectPythia/gridding-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/gridding-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
+<a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/gridding-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
+<a class="reference external" href="https://zenodo.org/badge/latestdoi/540167581"><img alt="DOI" src="https://zenodo.org/badge/540167581.svg"/></a>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card cartopy datashader geocat-viz matplotlib metpy seaborn visualization docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/advanced-viz-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/advanced-viz-cookbook/README.html"><h4 class="display-4 p-0">Advanced Visualization Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Kent, Julia, Zacharias, Anissa, Eroglu, Orhan, Chmielowiec, Philip, Clyne, John, Advanced Visualization Cookbook contributors</p>
-<br/>
-<p class="my-2">This Cookbook demonstrates advanced plotting routines using the Python packages matplotlib, cartopy, metpy, and geocat-viz.</p>
+<p class="my-2">This Cookbook demonstrates advanced plotting routines using the Python packages matplotlib, cartopy, metpy, and geocat-viz. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">cartopy</span>
 <span class="badge bg-primary mybadges">datashader</span>
@@ -661,20 +682,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card cartopy datashader holoviews hvplot visualization docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/unstructured-grid-viz-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/unstructured-grid-viz-cookbook/README.html"><h4 class="display-4 p-0">Unstructured Grids Visualization Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Eroglu, Orhan, Chmielowiec, Philip, Jain, Rajeev, Franda, Ian, Unstructured Grids Visualization Cookbook contributors</p>
-<br/>
-<p class="my-2">This Cookbook is a comprehensive showcase of workflows </p>
+<p class="my-2">This Cookbook is a comprehensive showcase of workflows  </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">cartopy</span>
 <span class="badge bg-primary mybadges">datashader</span>
@@ -690,20 +710,19 @@ Packages
 </div>
 </div>
 </div>
-<div class="d-flex col-12 tagged-card atmosphere climate climate-model dask geospatial intake-esm land-model matplotlib sustainability xarray zarr docutils">
-<div class="card w-100 shadow mb-4 docutils">
-<div class="card-body p-3 m-0 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/na-cordex-viz-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/na-cordex-viz-cookbook/README.html"><h4 class="display-4 p-0">NA-CORDEX Visualization Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Bonnlander, Brian, McGinnis, Seth, Banihirwe, Anderson, Nienhouse, Eric, de La Beaujardière, Jeff, NA-CORDEX Visualization Cookbook contributors</p>
-<br/>
-<p class="my-2">A notebook for visualizing data from the NA-CORDEX dataset.</p>
+<p class="my-2">A notebook for visualizing data from the NA-CORDEX dataset. </p>
 </div>
 </div>
 </div>
-<div class="card-footer p-1 docutils">
+<div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">atmosphere</span>
 <span class="badge bg-primary mybadges">climate</span>
@@ -725,35 +744,40 @@ Packages
 </div>
 </div>
 </div>
-</div>
-</div>
 <div class="modal-backdrop"></div>
 <script src="/_static/custom.js"></script>
-</div></div></div>
-      
-      <!-- Previous / next buttons -->
-<div class='prev-next-area'>
 </div>
+</div>
+</section></div></div>
       
-    </div>
+      
+<div class="prev-next-area">
+</div>
+          </div>
   </div>
 </main>
-
-      </div>
     </div>
-  
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
-
-<footer class="footer">
-  <div class="container-fluid m-0 p-0">
-  
-    <div class="footer-item">
+  </div>
     
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+     
+  
+  
+  
+  
+    <div class="footer-items__start">
+      <div class="container-fluid m-0 p-0">
+      
+        <div class="footer-item">
   <div class="container-fluid footer-logos">
     <div class="container-xl">
       <div class="row d-flex flex-wrap align-items-center">
         <div class="d-flex col-lg-3 col-md-4 col-sm-6 p-2 mx-auto">
-          <img alt="NCAR" src="_images/NCAR-contemp-logo-blue.svg" style="width: 100%">
+          <img alt="NCAR" src="_images/NSF-NCAR_Lockup-UCAR-Dark_102523.svg" style="width: 100%">
         </div>
         <div class="d-flex col-lg-3 col-md-4 col-sm-6 p-2 mx-auto">
           <img alt="Unidata" src="_images/Unidata_logo_horizontal_1200x300.svg" style="width: 100%">
@@ -763,11 +787,9 @@ Packages
         </div>
       </div>
     </div>
-  </div>
-    </div>
-  
-    <div class="footer-item">
+  </div></div>
       
+        <div class="footer-item">  
   <div class="container-fluid footer-menu pt-4">
     <div class="container">
       <div class="row justify-content-center">
@@ -798,27 +820,23 @@ Packages
         </div>
       </div>
     </div>
-  </div>
-    </div>
-  
-    <div class="footer-item">
-      <div class="container-fluid footer-info">
+  </div></div>
+      
+        <div class="footer-item">  <div class="container-fluid footer-info">
     <div class="container-xl">
       <div class="d-flex justify-content-center">
         <p class="py-1 m-0">
-            &copy;&nbsp;2022.
+            &copy;&nbsp;2024.
         
           By the <a href="https://projectpythia.org/">Project Pythia</a> Community.
         
-          Last updated on 5 February 2024.
+          Last updated on 29 March 2024.
         </p>
       </div>
     </div>
-  </div>
-    </div>
-  
-    <div class="footer-item">
-    <div class="container-fluid footer-extra">
+  </div></div>
+      
+        <div class="footer-item"><div class="container-fluid footer-extra">
     <div class="container">
       <div class="row">
         <p class="m-0">
@@ -831,10 +849,12 @@ Packages
         </p>
       </div>
     </div>
-  </div>
+  </div></div>
+      
+      </div>
     </div>
   
-  </div>
-</footer>
+
+  </footer>
   </body>
 </html>
