@@ -9,7 +9,6 @@ dependencies:
 - pip
 - pyyaml
 - pre-commit
-- sphinx-panels
 - cffconvert
 - pip:
   - git+https://github.com/ProjectPythia/sphinx-pythia-theme.git@theme-update
