@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@try_updated_theme
+    uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     with:
       environment_file: 'environment.yml'
       environment_name: pythia-tutorial-dev
@@ -18,6 +18,6 @@ jobs:
 
   deploy:
     needs: build
-    uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@try_updated_theme
+    uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
     with:
       publish_dir: 'site/_build/html'
