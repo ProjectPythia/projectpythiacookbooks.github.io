@@ -116,7 +116,7 @@ html_theme_options = {
     },
     'secondary_sidebar_items': [],
     "footer_logos": {
-        "NCAR": "_static/images/logos/NSF-NCAR_Lockup-UCAR-Dark_102523.png",
+        "NCAR": "_static/images/logos/NSF-NCAR_Lockup-UCAR-Dark_102523.svg",
         "Unidata": "_static/images/logos/Unidata_logo_horizontal_1200x300.svg",
         "UAlbany": "_static/images/logos/UAlbany-A2-logo-purple-gold.svg",
     },
