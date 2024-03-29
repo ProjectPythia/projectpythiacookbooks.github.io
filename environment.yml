@@ -3,12 +3,10 @@ channels:
 - conda-forge
 - nodefaults
 dependencies:
+- cffconvert
 - matplotlib
 - myst-nb
 - pandas
-- pip
-- pyyaml
 - pre-commit
-- cffconvert
-- pip:
-  - sphinx-pythia-theme
+- pyyaml
+- sphinx-pythia-theme
