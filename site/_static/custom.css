@@ -154,21 +154,13 @@ main.banner-main #project-pythia {
   padding: 0 0;
 }
 
-details.sd-dropdown {
-  box-shadow: none;
-  background-color: white;
-  border-left: none;
-}
-
 details.sd-dropdown summary.sd-card-header {
   padding-bottom: 0;
   padding-top: 0;
-}
-
-sd-summary-content sd-card-body docutils {
-  z-index: 9999;
-}
-
-details.sd-dropdown summary.sd-card-header+div.sd-summary-content {
-  --pst-sd-dropdown-color: none;
+  box-shadow: none !important;
+  background-color: white;
+  border-left: none !important;
+  border: 1rem !important;
+  --pst-sd-dropdown-color: white;
+  --pst-sd-dropdown-bg-color: white;
 }
