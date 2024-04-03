@@ -1,5 +1,4 @@
 import itertools, json, yaml, pathlib, subprocess, requests
-from textwrap import dedent
 from truncatehtml import truncate
 
 
@@ -61,7 +60,7 @@ def generate_repo_dicts(all_items):
             cookbook_title = citation_dict["title"]
             description = citation_dict["description"]
             creators = citation_dict["creators"]
-            names = [item.get("name") for item in creators]
+            names = [creator.get("name") for creator in creators]
             authors = ", ".join(names)
 
             gallery_info_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_gallery_info.yml"
@@ -132,16 +131,16 @@ def _generate_tag_menu(repo_dicts, tag_key):
     )
 
     return f"""
-<div class="dropdown">
-
-<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-{tag_key.title()}
-</button>
-<ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
-{options}
-</ul>
-</div>
-"""
+        <div class="dropdown">
+        
+        <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {tag_key.title()}
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
+        {options}
+        </ul>
+        </div>
+    """
 
 
 def generate_menu(repo_dicts, submit_btn_txt=None, submit_btn_link=None):
@@ -174,7 +173,7 @@ def build_from_repos(
 ):
 
     # Build the gallery file
-    panels_body = []
+    grid_body = []
     for repo_dict in repo_dicts:
         repo = repo_dict["repo"]
         github_url = repo_dict["github_url"]
@@ -199,7 +198,8 @@ def build_from_repos(
             for tag in tag_list_f
         ]
         tags = "\n".join(tags)
-        tag_class_str = " ".join(tag_list_f)
+
+        # tag_class_str = " ".join(tag_list_f)
 
         description = repo_dict["description"]
         ellipsis_str = '<a class="modal-btn"> ... more</a>'
@@ -207,70 +207,71 @@ def build_from_repos(
 
         if ellipsis_str in short_description:
             modal_str = f"""
-<div class="modal">
-<div class="content">
-<img src="{thumbnail_url}" class="modal-img" />
-<h3 class="display-3">{cookbook_title}</h3>
-{authors_str}
-<p class="my-2">{description}</p>
-<p class="my-2">{tags}</p>
-<p class="mt-3 mb-0"><a href="{cookbook_url}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
-</div>
-</div>
-"""
+            <div class="modal">
+            <div class="content">
+            <img src="{thumbnail_url}" class="modal-img" />
+            <h3 class="display-3">{cookbook_title}</h3>
+            {authors_str}
+            <p class="my-2">{description}</p>
+            <p class="my-2">{tags}</p>
+            <p class="mt-3 mb-0"><a href="{cookbook_url}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+            </div>
+            </div>
+            """
+            modal_str = '\n'.join([m.lstrip() for m in modal_str.split('\n')])
         else:
             modal_str = ""
+            new_card = f"""\
+                        :::{{grid-item-card}}
+                        :shadow: md
+                        :class-footer: card-footer
+                        <div class="d-flex gallery-card">
+                        <img src="{thumbnail_url}" class="gallery-thumbnail" />
+                        <div class="container">
+                        <a href="{cookbook_url}" class="text-decoration-none"><h4 class="display-4 p-0">{cookbook_title}</h4></a>
+                        <p class="card-subtitle">{authors_str}</p>
+                        <p class="my-2">{short_description} </p>
+                        </div>
+                        </div>
+                        {modal_str}
+                        
+                        +++
+                        
+                        <div class="tagsandbadges">
+                            {tags}
+                            <div>{status_badges}</div>
+                        </div>
+                        
+                        :::
 
-        panels_body.append(
-            f"""\
----
-:column: + tagged-card {tag_class_str}
+                        """
 
-<div class="d-flex gallery-card">
-<img src="{thumbnail_url}" class="gallery-thumbnail" />
-<div class="container">
-<a href="{cookbook_url}" class="text-decoration-none"><h4 class="display-4 p-0">{cookbook_title}</h4></a>
-<p class="card-subtitle">{authors_str}</p>
-<br/>
-<p class="my-2">{short_description}</p>
-</div>
-</div>
-{modal_str}
+        grid_body.append('\n'.join([m.lstrip() for m in new_card.split('\n')]))
 
-+++
-<div class="tagsandbadges">
-{tags}
-<div>{status_badges}</div>
-</div>
 
-"""
-        )
-
-    panels_body = "\n".join(panels_body)
+    grid_body = "\n".join(grid_body)
 
     stitle = f"#### {subtitle}" if subtitle else ""
     stext = subtext if subtext else ""
 
-    panels = f"""
-# {title}
+    grid = f"""
+        # {title}
+        {'=' * len(title)}
+        
+        {stitle}
+        {stext}
+        
+        {menu_html}
+        
+        ::::{{grid}} 1
+        :gutter: 4
+        
+        {grid_body}
+        
+        <div class="modal-backdrop"></div>
+        <script src="/_static/custom.js"></script>
+    """
 
-{stitle}
-{stext}
+    grid = '\n'.join([m.lstrip() for m in grid.split('\n')])
 
-{menu_html}
-
-````{{panels}}
-:column: col-12
-:card: +mb-4 w-100
-:header: d-none
-:body: p-3 m-0
-:footer: p-1
-
-{dedent(panels_body)}
-````
-
-<div class="modal-backdrop"></div>
-<script src="/_static/custom.js"></script>
-"""
-
-    pathlib.Path(f"{filename}.md").write_text(panels)
+    pathlib.Path(f"{filename}.md").write_text(grid)
