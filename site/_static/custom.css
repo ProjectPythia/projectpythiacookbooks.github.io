@@ -153,3 +153,14 @@ main.banner-main #project-pythia {
 .tagsandbadges {
   padding: 0 0;
 }
+
+details.sd-dropdown {
+  box-shadow: none;
+  background-color: white;
+  border-left: none;
+}
+
+summary.sd-card-header {
+  padding-bottom: 0;
+  padding-top: 0;
+}
