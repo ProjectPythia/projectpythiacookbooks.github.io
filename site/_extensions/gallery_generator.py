@@ -126,7 +126,7 @@ def _generate_tag_menu(repo_dicts, tag_key):
     tag_list = sorted(tag_set)
 
     options = "".join(
-        f'<li><label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={tag.replace(" ", "-")} onchange="change();">&nbsp;{tag}</label></li>'
+        f'<label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={tag.replace(" ", "-")} onchange="change();">&nbsp;{tag}</label>'
         for tag in tag_list
     )
 
