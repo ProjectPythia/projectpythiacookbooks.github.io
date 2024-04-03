@@ -160,7 +160,15 @@ details.sd-dropdown {
   border-left: none;
 }
 
-summary.sd-card-header {
+details.sd-dropdown summary.sd-card-header {
   padding-bottom: 0;
   padding-top: 0;
+}
+
+sd-summary-content sd-card-body docutils {
+  z-index: 9999;
+}
+
+details.sd-dropdown summary.sd-card-header+div.sd-summary-content {
+  --pst-sd-dropdown-color: none;
 }
