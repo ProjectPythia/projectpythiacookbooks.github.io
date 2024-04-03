@@ -126,20 +126,14 @@ def _generate_tag_menu(repo_dicts, tag_key):
     tag_list = sorted(tag_set)
 
     options = "".join(
-        f'<li><label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={tag.replace(" ", "-")} onchange="change();">&nbsp;{tag}</label></li>'
+        f'<label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={tag.replace(" ", "-")} onchange="change();">&nbsp;{tag}</label>'
         for tag in tag_list
     )
 
     return f"""
-        <div class="dropdown">
-        
-        <button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        {tag_key.title()}
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
-        {options}
-        </ul>
-        </div>
+            :::{{dropdown}} {tag_key.title()}
+            {options}
+            :::
     """
 
 
