@@ -12,14 +12,8 @@ function getClassOfCheckedCheckboxes(checkboxes) {
 }
 
 function change() {
-  var affiliationCbs = document.querySelectorAll(".affiliation input[type='checkbox']");
   var domainsCbs = document.querySelectorAll(".domains input[type='checkbox']");
   var packagesCbs = document.querySelectorAll(".packages input[type='checkbox']");
-
-  for (var i = 0; i < affiliationCbs.length; i++) {
-    affiliationCbs[i].addEventListener('click', change);
-    affiliationCbs[i].addEventListener('change', change);
-  }
 
   var domainTags = getClassOfCheckedCheckboxes(domainsCbs);
   var packageTags = getClassOfCheckedCheckboxes(packagesCbs);
