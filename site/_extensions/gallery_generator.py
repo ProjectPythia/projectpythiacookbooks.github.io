@@ -221,30 +221,31 @@ def build_from_repos(
             modal_str = '\n'.join([m.lstrip() for m in modal_str.split('\n')])
         else:
             modal_str = ""
-            new_card = f"""\
-                        :::{{grid-item-card}}
-                        :shadow: md
-                        :class-footer: card-footer
-                        <div class="d-flex gallery-card">
-                        <img src="{thumbnail_url}" class="gallery-thumbnail" />
-                        <div class="container">
-                        <a href="{cookbook_url}" class="text-decoration-none"><h4 class="display-4 p-0">{cookbook_title}</h4></a>
-                        <p class="card-subtitle">{authors_str}</p>
-                        <p class="my-2">{short_description} </p>
-                        </div>
-                        </div>
-                        {modal_str}
-                        
-                        +++
-                        
-                        <div class="tagsandbadges">
-                            {tags}
-                            <div>{status_badges}</div>
-                        </div>
-                        
-                        :::
+            
+        new_card = f"""\
+                    :::{{grid-item-card}}
+                    :shadow: md
+                    :class-footer: card-footer
+                    <div class="d-flex gallery-card">
+                    <img src="{thumbnail_url}" class="gallery-thumbnail" />
+                    <div class="container">
+                    <a href="{cookbook_url}" class="text-decoration-none"><h4 class="display-4 p-0">{cookbook_title}</h4></a>
+                    <p class="card-subtitle">{authors_str}</p>
+                    <p class="my-2">{short_description} </p>
+                    </div>
+                    </div>
+                    {modal_str}
+                    
+                    +++
+                    
+                    <div class="tagsandbadges">
+                        {tags}
+                        <div>{status_badges}</div>
+                    </div>
+                    
+                    :::
 
-                        """
+                    """
 
         grid_body.append('\n'.join([m.lstrip() for m in new_card.split('\n')]))
 
