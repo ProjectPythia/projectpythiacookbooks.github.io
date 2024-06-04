@@ -43,6 +43,12 @@ def _run_cffconvert(command):
         error_message = stderr.decode("utf-8").strip()
         raise RuntimeError(f"cffconvert command failed: {error_message}")
 
+def _make_standard_name(name):
+    '''Take string input like LASTNAME, FIRSTNAME and return FIRSTNAME LASTNAME without comma'''
+    lastfirst = name.split(', ')
+    firstlast = lastfirst[::-1]
+    standard = ' '.join(firstlast)
+    return standard
 
 def generate_repo_dicts(all_items):
 
@@ -60,7 +66,7 @@ def generate_repo_dicts(all_items):
             cookbook_title = citation_dict["title"]
             description = citation_dict["description"]
             creators = citation_dict["creators"]
-            names = [creator.get("name") for creator in creators]
+            names = [_make_standard_name(creator.get("name")) for creator in creators]
             authors = ", ".join(names)
 
             gallery_info_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_gallery_info.yml"
@@ -221,31 +227,30 @@ def build_from_repos(
             modal_str = '\n'.join([m.lstrip() for m in modal_str.split('\n')])
         else:
             modal_str = ""
-            
-        new_card = f"""\
-                    :::{{grid-item-card}}
-                    :shadow: md
-                    :class-footer: card-footer
-                    <div class="d-flex gallery-card">
-                    <img src="{thumbnail_url}" class="gallery-thumbnail" />
-                    <div class="container">
-                    <a href="{cookbook_url}" class="text-decoration-none"><h4 class="display-4 p-0">{cookbook_title}</h4></a>
-                    <p class="card-subtitle">{authors_str}</p>
-                    <p class="my-2">{short_description} </p>
-                    </div>
-                    </div>
-                    {modal_str}
-                    
-                    +++
-                    
-                    <div class="tagsandbadges">
-                        {tags}
-                        <div>{status_badges}</div>
-                    </div>
-                    
-                    :::
+            new_card = f"""\
+                        :::{{grid-item-card}}
+                        :shadow: md
+                        :class-footer: card-footer
+                        <div class="d-flex gallery-card">
+                        <img src="{thumbnail_url}" class="gallery-thumbnail" />
+                        <div class="container">
+                        <a href="{cookbook_url}" class="text-decoration-none"><h4 class="display-4 p-0">{cookbook_title}</h4></a>
+                        <p class="card-subtitle">{authors_str}</p>
+                        <p class="my-2">{short_description} </p>
+                        </div>
+                        </div>
+                        {modal_str}
+                        
+                        +++
+                        
+                        <div class="tagsandbadges">
+                            {tags}
+                            <div>{status_badges}</div>
+                        </div>
+                        
+                        :::
 
-                    """
+                        """
 
         grid_body.append('\n'.join([m.lstrip() for m in new_card.split('\n')]))
 
