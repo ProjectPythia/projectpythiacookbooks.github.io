@@ -256,7 +256,6 @@ def build_from_repos(
 
     grid = f"""
         # {title}
-        {'=' * len(title)}
         
         {stitle}
         {stext}
