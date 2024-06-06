@@ -52,7 +52,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/cesm-lens-aws-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/cesm-lens-aws-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">CESM LENS on AWS Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Banihirwe, Anderson, Bonnlander, Brian, de La Beaujardière, Jeff, Henderson, Scott, CESM LENS on AWS Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Brian Bonnlander, Jeff de La Beaujardière, Scott Henderson, CESM LENS on AWS Cookbook contributors</p>
 <p class="my-2">Notebooks developed to demonstrate analysis of CESM LENS data publicly available on Amazon S3 (us-west-2 region) using Xarray and Dask. </p>
 </div>
 </div>
@@ -82,7 +82,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/cmip6-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/cmip6-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">CMIP6 Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Abernathey, Ryan, Drake, Henri, Ford, Robert R., CMIP6 Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Ryan Abernathey, Henri Drake, Robert R. Ford, CMIP6 Cookbook contributors</p>
 <p class="my-2">Examples of analysis of Google Cloud CMIP6 data using Pangeo tools. </p>
 </div>
 </div>
@@ -111,7 +111,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/HRRR-AWS-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/HRRR-AWS-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">HRRR AWS Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Tyle, Kevin, HRRR-AWS Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Tyle, HRRR-AWS Cookbook contributors</p>
 <p class="my-2">A cookbook for working with AWS-served HRRR model output data. </p>
 </div>
 </div>
@@ -141,7 +141,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/radar-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/radar-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Radar Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Grover, Maxwell, Sherman, Zachary, Sharma, Milind, Ladino, Alfonso, Camron, Crystal, Radar Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Maxwell Grover, Zachary Sherman, Milind Sharma, Alfonso Ladino, Crystal Camron, Radar Cookbook contributors</p>
 <p class="my-2">A cookbook meant to work with various weather radar data. </p>
 </div>
 </div>
@@ -169,7 +169,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/intake-cookbook/main/thumbnail.svg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/intake-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Intake Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Morley, James, Intake Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> James Morley, Intake Cookbook contributors</p>
 <p class="my-2">This cookbook shows examples of using and creating Intake catalogs to access data. </p>
 </div>
 </div>
@@ -199,7 +199,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/landsat-ml-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/landsat-ml-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Landsat ML Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Roumis, Demetris, Landsat ML Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Demetris Roumis, Landsat ML Cookbook contributors</p>
 <p class="my-2">Machine learning on Landsat data. </p>
 </div>
 </div>
@@ -232,7 +232,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/kerchunk-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/kerchunk-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Kerchunk Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Hagen, Norland Raphael, Kerchunk Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Norland Raphael Hagen, Kerchunk Cookbook contributors</p>
 <p class="my-2">Kerchunk provides cloud-friendly access to archival data. With Kerchunk you can read collections of legacy file formats (NetCDF, GRIB2 etc.) as if they were ARCO (Analysis-Ready Cloud-Optimized) formats such as Zarr, without creating a copy of the original dataset. </p>
 </div>
 </div>
@@ -265,7 +265,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/xbatcher-ML-1-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/xbatcher-ML-1-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">xbatcher for Machine Learning Part 1 Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Dupuis, Christopher, Sinha, Anirban, Abernathey, Ryan, xbatcher for Machine Learning Part 1 Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Christopher Dupuis, Anirban Sinha, Ryan Abernathey, xbatcher for Machine Learning Part 1 Cookbook contributors</p>
 <p class="my-2">A complete workflow for a convolutional neural network using xbatcher. </p>
 </div>
 </div>
@@ -303,7 +303,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/dask-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/dask-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Dask Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Sobhani, Negin, Brian, Vanderwende, Cherian, Deepak, Kirk, Ben, Dask Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Negin Sobhani, Vanderwende Brian, Deepak Cherian, Ben Kirk, Dask Cookbook contributors</p>
 <p class="my-2">A cookbook for Dask workflows. </p>
 </div>
 </div>
@@ -331,7 +331,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/ERA5_interactive-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/ERA5_interactive-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">ARCO ERA-5 Interactive Visualization Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Tyle, Kevin, Barletta, Michael, ARCO ERA-5 Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Tyle, Michael Barletta, ARCO ERA-5 Cookbook contributors</p>
 <p class="my-2">A cookbook to interactively explore and visualize ERA-5 data in ARCO format. </p>
 </div>
 </div>
@@ -362,7 +362,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/web-map-feature-services-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/web-map-feature-services-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Web Map / Feature Services Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Huang, Andrew, Web Map / Feature Services Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Andrew Huang, Web Map / Feature Services Cookbook contributors</p>
 <p class="my-2">Learn how to use web map and feature services to easily and quickly provide spatial context, without the need to download and process GBs of data! </p>
 </div>
 </div>
@@ -399,7 +399,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/interactive-sentinel-2-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/interactive-sentinel-2-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Sentinel-2 L2A Interactive Dashboard</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Das, Pritam, This Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Pritam Das, This Cookbook contributors</p>
 <p class="my-2">This Project Pythia Cookbook provides a recipe for building an interactive dashboard for the Sentinel-2 L2A satellite imagery using the holoviews ecosystem. </p>
 </div>
 </div>
@@ -435,7 +435,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/gridding-cookbook/main/grid_thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/gridding-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">(re)Gridding with xarray</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Martin, Thomas, (re)Gridding with xarray contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Thomas Martin, (re)Gridding with xarray contributors</p>
 <p class="my-2">A small collection of notebooks that explores some (re)gridding options within the Xarray ecosystem. The thumbnail image was created with the assistance of DALL·E 2. </p>
 </div>
 </div>
@@ -465,7 +465,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/vapor-python-cookbook/main/vapor_thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/vapor-python-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Vapor Python Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Cherukuru, Nihanth, Jarosynski, Stanislaw 'Stas', Austin, Philip, VAPOR python cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Nihanth Cherukuru, Stanislaw 'Stas' Jarosynski, Philip Austin, VAPOR python cookbook contributors</p>
 <p class="my-2">The Visualization and Analysis Platform for Ocean, Atmosphere, and Solar Researchers (VAPOR) provides an interactive 3D visualization environment for exploratory visual analysis and the production of captivating animations and high-quality images. VAPOR runs on most UNIX and Windows systems equipped<a class="modal-btn"> ... more</a> </p>
 </div>
 </div>
@@ -474,7 +474,7 @@ Packages
 <div class="content">
 <img src="https://raw.githubusercontent.com/ProjectPythia/vapor-python-cookbook/main/vapor_thumbnail.png" class="modal-img" />
 <h3 class="display-3">Vapor Python Cookbook</h3>
-<strong>Author:</strong> Cherukuru, Nihanth, Jarosynski, Stanislaw 'Stas', Austin, Philip, VAPOR python cookbook contributors
+<strong>Author:</strong> Nihanth Cherukuru, Stanislaw 'Stas' Jarosynski, Philip Austin, VAPOR python cookbook contributors
 <p class="my-2">The Visualization and Analysis Platform for Ocean, Atmosphere, and Solar Researchers (VAPOR) provides an interactive 3D visualization environment for exploratory visual analysis and the production of captivating animations and high-quality images. VAPOR runs on most UNIX and Windows systems equipped with modern 3D graphics cards. </p>
 <p class="my-2"><span class="badge bg-primary mybadges">3D-visualizations</span>
 <span class="badge bg-primary mybadges">climate</span>
@@ -515,7 +515,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/advanced-viz-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/advanced-viz-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Advanced Visualization Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kent, Julia, Zacharias, Anissa, Eroglu, Orhan, Chmielowiec, Philip, Clyne, John, Advanced Visualization Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Anissa Zacharias, Orhan Eroglu, Philip Chmielowiec, John Clyne, Advanced Visualization Cookbook contributors</p>
 <p class="my-2">This Cookbook demonstrates advanced plotting routines using the Python packages matplotlib, cartopy, metpy, and geocat-viz. </p>
 </div>
 </div>
@@ -548,7 +548,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/unstructured-grid-viz-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/unstructured-grid-viz-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Unstructured Grids Visualization Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Eroglu, Orhan, Chmielowiec, Philip, Jain, Rajeev, Franda, Ian, Unstructured Grids Visualization Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Orhan Eroglu, Philip Chmielowiec, Rajeev Jain, Ian Franda, Unstructured Grids Visualization Cookbook contributors</p>
 <p class="my-2">This Cookbook is a comprehensive showcase of workflows  </p>
 </div>
 </div>
@@ -579,7 +579,7 @@ Packages
 <img src="https://raw.githubusercontent.com/ProjectPythia/na-cordex-viz-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/na-cordex-viz-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">NA-CORDEX Visualization Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Bonnlander, Brian, McGinnis, Seth, Banihirwe, Anderson, Nienhouse, Eric, de La Beaujardière, Jeff, NA-CORDEX Visualization Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Brian Bonnlander, Seth McGinnis, Anderson Banihirwe, Eric Nienhouse, Jeff de La Beaujardière, NA-CORDEX Visualization Cookbook contributors</p>
 <p class="my-2">A notebook for visualizing data from the NA-CORDEX dataset. </p>
 </div>
 </div>
