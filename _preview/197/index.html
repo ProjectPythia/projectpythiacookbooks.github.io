@@ -14,33 +14,33 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-pythia-theme.min.css?v=e502140d" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-pythia-theme.min.css?v=ba7ce088" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=3f4ebbca" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b23a600d" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script src="_static/design-tabs.js?v=36754332"></script>
@@ -58,12 +58,13 @@
                 gtag('config', 'G-T52X8HNYE8');
             </script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script src="_static/custom.js?v=f0b785f2"></script>
     <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="14 April 2024"/>
+    <meta name="docbuild:last-update" content="7 June 2024"/>
   </head>
   
   
@@ -71,15 +72,15 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
 
   
   <div class="pst-scroll-pixel-helper"></div>
     <header class="bd-header navbar navbar-dark navbar-expand-lg bg-dark fixed-top bd-navbar shadow" id="navbar-main">
 <div class="bd-header__inner bd-page-width">
-  <label class="sidebar-toggle primary-toggle" for="__primary">
+  <button class="sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
-  </label>
+  </button>
   
   
   <div class=" navbar-header-items__start">
@@ -220,55 +221,64 @@
     <div class="col p-0">
       <div class="container-fluid sectionwrapper-1"><div class="container section-1"><section id="cookbooks-gallery">
 <h1 class="display-1">Cookbooks Gallery<a class="headerlink" href="#cookbooks-gallery" title="Link to this heading"><i class="fas fa-link"></i></a></h1>
-<p>=================</p>
 <p>Pythia Cookbooks provide example workflows on more advanced and domain-specific problems developed by the Pythia community. Cookbooks build on top of skills you learn in <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">Pythia Foundations</a>.</p>
 <p>Cookbooks are created from Jupyter Notebooks that we strive to binderize so each Cookbook can be <a class="reference external" href="https://foundations.projectpythia.org/preamble/how-to-use.html#interacting-with-jupyter-notebooks-in-the-cloud-via-binder">executed in the cloud with a single click from your browser</a>, but in some instances executing a Cookbook will require <a class="reference external" href="https://foundations.projectpythia.org/preamble/how-to-use.html#interacting-with-jupyter-books-locally">running the notebooks locally</a>.</p>
-<p>Interested in contributing a new Cookbook or contributing to an existing Cookbook? Great! Please see the <a class="reference external" href="https://github.com/ProjectPythia/.github/blob/main/.github/CONTRIBUTING.md">Project Pythia Cookbook Contributor’s Guide</a>, and consider opening a discussion under the <a class="reference external" href="https://discourse.pangeo.io/c/education/project-pythia/60">Project Pythia category of the Pangeo Discourse</a>.</p>
+<p>Interested in contributing a new Cookbook or contributing to an existing Cookbook? Great! Please see the <a class="reference external" href="https://projectpythia.org/cookbook-guide.html">Project Pythia Cookbook Contributor’s Guide</a>, and consider opening a discussion under the <a class="reference external" href="https://discourse.pangeo.io/c/education/project-pythia/60">Project Pythia category of the Pangeo Discourse</a>.</p>
 <div class="d-sm-flex mt-3 mb-4">
 <div class="d-flex gallery-menu">
-<div><a class="btn btn-primary btn-sm mx-1" href="https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&amp;labels=content%2Ccookbook-gallery-submission&amp;template=update-cookbook-gallery.yaml&amp;title=Update+Gallery+with+new+Cookbook" role="button">Submit a new Cookbook</a></div>
+<div><a class="btn btn-primary btn-sm mx-1" href="https://projectpythia.org/cookbook-guide.html" role="button">How can I create a new Cookbook?</a></div>
 </div>
 <div class="ml-auto d-flex">
 <div><button class="btn btn-link btn-sm mx-1" onclick="clearCbs()">Clear all filters</button></div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+domains<div class="sd-summary-down docutils">
+<svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-down" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z" fill-rule="evenodd"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-up" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z" fill-rule="evenodd"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="dropdown">
-<button aria-expanded="false" aria-haspopup="true" class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" data-toggle="dropdown" id="domainsDropdown" type="button">
-Domains
-</button>
-<ul aria-labelledby="domainsDropdown" class="dropdown-menu">
-<li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="3D-visualizations" type="checkbox"/> 3D visualizations</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="AWS-Cloud" type="checkbox"/> AWS Cloud</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="AWS-cloud" type="checkbox"/> AWS cloud</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="Basemaps" type="checkbox"/> Basemaps</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="Data-Access" type="checkbox"/> Data Access</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="Data-access" type="checkbox"/> Data access</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="GIS" type="checkbox"/> GIS</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="Geospatial-data" type="checkbox"/> Geospatial data</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="HRRR-model" type="checkbox"/> HRRR model</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="NASA-EarthData-GIBS" type="checkbox"/> NASA EarthData GIBS</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="Satellite-imagery" type="checkbox"/> Satellite imagery</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="Spatial-analysis" type="checkbox"/> Spatial analysis</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="atmosphere" type="checkbox"/> atmosphere</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="climate" type="checkbox"/> climate</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="climate-model" type="checkbox"/> climate model</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-science" type="checkbox"/> data science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="geospatial" type="checkbox"/> geospatial</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="interactive-visualization" type="checkbox"/> interactive-visualization</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="land-model" type="checkbox"/> land model</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="machine-learning" type="checkbox"/> machine learning</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="meteorology" type="checkbox"/> meteorology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="ml" type="checkbox"/> ml</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="oceanography" type="checkbox"/> oceanography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="particles" type="checkbox"/> particles</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="radar" type="checkbox"/> radar</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="satellite" type="checkbox"/> satellite</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="scientific-software-engineering" type="checkbox"/> scientific software engineering</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="sentinel-2" type="checkbox"/> sentinel-2</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="sustainability" type="checkbox"/> sustainability</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="visualization" type="checkbox"/> visualization</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="weather" type="checkbox"/> weather</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="zarr" type="checkbox"/> zarr</label></li>
-</ul>
-</div>
-<div class="dropdown">
-<button aria-expanded="false" aria-haspopup="true" class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" data-toggle="dropdown" id="packagesDropdown" type="button">
-Packages
-</button>
-<ul aria-labelledby="packagesDropdown" class="dropdown-menu">
-<li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="IPython" type="checkbox"/> IPython</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="Py-Art" type="checkbox"/> Py-Art</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="Pyresample" type="checkbox"/> Pyresample</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="cartopy" type="checkbox"/> cartopy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="dask" type="checkbox"/> dask</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="datashader" type="checkbox"/> datashader</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-viz" type="checkbox"/> geocat-viz</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geoviews" type="checkbox"/> geoviews</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="holoviews" type="checkbox"/> holoviews</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="hvPlot" type="checkbox"/> hvPlot</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="hvplot" type="checkbox"/> hvplot</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake" type="checkbox"/> intake</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake-esm" type="checkbox"/> intake-esm</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake-markdown" type="checkbox"/> intake-markdown</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake-xarray" type="checkbox"/> intake-xarray</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="kerchunk" type="checkbox"/> kerchunk</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="matplotlib" type="checkbox"/> matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="metpy" type="checkbox"/> metpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="numpy" type="checkbox"/> numpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="odc.stac" type="checkbox"/> odc.stac</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="owslib" type="checkbox"/> owslib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="panel" type="checkbox"/> panel</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="planetary-computer" type="checkbox"/> planetary-computer</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="seaborn" type="checkbox"/> seaborn</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="tensorflow" type="checkbox"/> tensorflow</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="verde" type="checkbox"/> verde</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xESMF" type="checkbox"/> xESMF</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xarray" type="checkbox"/> xarray</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xbatcher" type="checkbox"/> xbatcher</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xeofs" type="checkbox"/> xeofs</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xesmf" type="checkbox"/> xesmf</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="zarr" type="checkbox"/> zarr</label></li>
+<ul>
+<li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="3d-visualizations" type="checkbox"/> 3D Visualizations</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="aws-cloud" type="checkbox"/> AWS Cloud</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="atmosphere" type="checkbox"/> Atmosphere</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="basemaps" type="checkbox"/> Basemaps</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="climate" type="checkbox"/> Climate</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="climate-model" type="checkbox"/> Climate Model</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-access" type="checkbox"/> Data Access</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-science" type="checkbox"/> Data Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="gis" type="checkbox"/> GIS</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="geospatial" type="checkbox"/> Geospatial</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="geospatial-data" type="checkbox"/> Geospatial Data</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="hrrr-model" type="checkbox"/> HRRR Model</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="interactive-visualization" type="checkbox"/> Interactive-Visualization</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="land-model" type="checkbox"/> Land Model</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="machine-learning" type="checkbox"/> Machine Learning</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="meteorology" type="checkbox"/> Meteorology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="ml" type="checkbox"/> Ml</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="nasa-earthdata-gibs" type="checkbox"/> NASA EarthData GIBS</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="oceanography" type="checkbox"/> Oceanography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="particles" type="checkbox"/> Particles</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="radar" type="checkbox"/> Radar</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="satellite" type="checkbox"/> Satellite</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="satellite-imagery" type="checkbox"/> Satellite Imagery</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="scientific-software-engineering" type="checkbox"/> Scientific Software Engineering</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="sentinel-2" type="checkbox"/> Sentinel-2</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="spatial-analysis" type="checkbox"/> Spatial Analysis</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="sustainability" type="checkbox"/> Sustainability</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="visualization" type="checkbox"/> Visualization</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="weather" type="checkbox"/> Weather</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="zarr" type="checkbox"/> Zarr</label></li>
 </ul>
 </div>
 </div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+packages<div class="sd-summary-down docutils">
+<svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-down" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z" fill-rule="evenodd"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-up" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z" fill-rule="evenodd"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<div class="dropdown">
+<ul>
+<li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="cartopy" type="checkbox"/> Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="dask" type="checkbox"/> Dask</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="datashader" type="checkbox"/> Datashader</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-viz" type="checkbox"/> Geocat-Viz</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geoviews" type="checkbox"/> Geoviews</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="holoviews" type="checkbox"/> Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="hvplot" type="checkbox"/> HvPlot</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="hvplot" type="checkbox"/> Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="ipython" type="checkbox"/> IPython</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake" type="checkbox"/> Intake</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake-esm" type="checkbox"/> Intake-Esm</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake-markdown" type="checkbox"/> Intake-Markdown</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake-xarray" type="checkbox"/> Intake-Xarray</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="kerchunk" type="checkbox"/> Kerchunk</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="matplotlib" type="checkbox"/> Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="metpy" type="checkbox"/> Metpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="numpy" type="checkbox"/> Numpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="odc.stac" type="checkbox"/> Odc.Stac</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="owslib" type="checkbox"/> Owslib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="panel" type="checkbox"/> Panel</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="planetary-computer" type="checkbox"/> Planetary-Computer</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="py-art" type="checkbox"/> Py-Art</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pyresample" type="checkbox"/> Pyresample</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="seaborn" type="checkbox"/> Seaborn</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="tensorflow" type="checkbox"/> Tensorflow</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="vapor" type="checkbox"/> Vapor</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="verde" type="checkbox"/> Verde</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xesmf" type="checkbox"/> XESMF</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xarray" type="checkbox"/> Xarray</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xbatcher" type="checkbox"/> Xbatcher</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xeofs" type="checkbox"/> Xeofs</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xesmf" type="checkbox"/> Xesmf</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="zarr" type="checkbox"/> Zarr</label></li>
+</ul>
+</div>
+</div>
+</details></div>
 </div>
 <script>$(document).on("click",function(){$(".collapse").collapse("hide");}); </script>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-4 sd-g-xs-4 sd-g-sm-4 sd-g-md-4 sd-g-lg-4 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-1 sd-g-0 sd-g-xs-0 sd-g-sm-0 sd-g-md-0 sd-g-lg-0 docutils">
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card climate dask intake-esm xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/cesm-lens-aws-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/cesm-lens-aws-cookbook/README.html"><h4 class="display-4 p-0">CESM LENS on AWS Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Banihirwe, Anderson, Bonnlander, Brian, de La Beaujardière, Jeff, Henderson, Scott, CESM LENS on AWS Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Brian Bonnlander, Jeff de La Beaujardière, Scott Henderson, CESM LENS on AWS Cookbook contributors</p>
 <p class="my-2">Notebooks developed to demonstrate analysis of CESM LENS data publicly available on Amazon S3 (us-west-2 region) using Xarray and Dask. </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">climate</span>
-<span class="badge bg-primary mybadges">dask</span>
-<span class="badge bg-primary mybadges">intake-esm</span>
-<span class="badge bg-primary mybadges">xarray</span>
+<span class="badge bg-primary mybadges">Climate</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Intake-Esm</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/cesm-lens-aws-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/cesm-lens-aws-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/cesm-lens-aws-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -279,22 +289,22 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card climate intake-esm xesmf docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/cmip6-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/cmip6-cookbook/README.html"><h4 class="display-4 p-0">CMIP6 Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Abernathey, Ryan, Drake, Henri, Ford, Robert R., CMIP6 Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Ryan Abernathey, Henri Drake, Robert R. Ford, CMIP6 Cookbook contributors</p>
 <p class="my-2">Examples of analysis of Google Cloud CMIP6 data using Pangeo tools. </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">climate</span>
-<span class="badge bg-primary mybadges">intake-esm</span>
-<span class="badge bg-primary mybadges">xesmf</span>
+<span class="badge bg-primary mybadges">Climate</span>
+<span class="badge bg-primary mybadges">Intake-Esm</span>
+<span class="badge bg-primary mybadges">Xesmf</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/cmip6-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/cmip6-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/cmip6-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -305,23 +315,23 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card aws-cloud hrrr-model xarray zarr docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/HRRR-AWS-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/HRRR-AWS-cookbook/README.html"><h4 class="display-4 p-0">HRRR AWS Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Tyle, Kevin, HRRR-AWS Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Tyle, HRRR-AWS Cookbook contributors</p>
 <p class="my-2">A cookbook for working with AWS-served HRRR model output data. </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">AWS-cloud</span>
-<span class="badge bg-primary mybadges">HRRR-model</span>
-<span class="badge bg-primary mybadges">xarray</span>
-<span class="badge bg-primary mybadges">zarr</span>
+<span class="badge bg-primary mybadges">AWS-Cloud</span>
+<span class="badge bg-primary mybadges">HRRR-Model</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<span class="badge bg-primary mybadges">Zarr</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/HRRR-AWS-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/HRRR-AWS-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/HRRR-AWS-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -332,13 +342,13 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card py-art radar docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/radar-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/radar-cookbook/README.html"><h4 class="display-4 p-0">Radar Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Grover, Maxwell, Sherman, Zachary, Sharma, Milind, Ladino, Alfonso, Camron, Crystal, Radar Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Maxwell Grover, Zachary Sherman, Milind Sharma, Alfonso Ladino, Crystal Camron, Radar Cookbook contributors</p>
 <p class="my-2">A cookbook meant to work with various weather radar data. </p>
 </div>
 </div>
@@ -346,7 +356,7 @@ Packages
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">Py-Art</span>
-<span class="badge bg-primary mybadges">radar</span>
+<span class="badge bg-primary mybadges">Radar</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/radar-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/radar-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/radar-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -357,23 +367,23 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card data-access intake intake-markdown intake-xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/intake-cookbook/main/thumbnail.svg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/intake-cookbook/README.html"><h4 class="display-4 p-0">Intake Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Morley, James, Intake Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> James Morley, Intake Cookbook contributors</p>
 <p class="my-2">This cookbook shows examples of using and creating Intake catalogs to access data. </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">Data-access</span>
-<span class="badge bg-primary mybadges">intake</span>
-<span class="badge bg-primary mybadges">intake-markdown</span>
-<span class="badge bg-primary mybadges">intake-xarray</span>
+<span class="badge bg-primary mybadges">Data-Access</span>
+<span class="badge bg-primary mybadges">Intake</span>
+<span class="badge bg-primary mybadges">Intake-Markdown</span>
+<span class="badge bg-primary mybadges">Intake-Xarray</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/intake-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/intake-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/intake-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -384,26 +394,26 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card climate dask hvplot intake ml satellite xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/landsat-ml-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/landsat-ml-cookbook/README.html"><h4 class="display-4 p-0">Landsat ML Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Roumis, Demetris, Landsat ML Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Demetris Roumis, Landsat ML Cookbook contributors</p>
 <p class="my-2">Machine learning on Landsat data. </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">climate</span>
-<span class="badge bg-primary mybadges">dask</span>
-<span class="badge bg-primary mybadges">hvPlot</span>
-<span class="badge bg-primary mybadges">intake</span>
-<span class="badge bg-primary mybadges">ml</span>
-<span class="badge bg-primary mybadges">satellite</span>
-<span class="badge bg-primary mybadges">xarray</span>
+<span class="badge bg-primary mybadges">Climate</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">HvPlot</span>
+<span class="badge bg-primary mybadges">Intake</span>
+<span class="badge bg-primary mybadges">Ml</span>
+<span class="badge bg-primary mybadges">Satellite</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/landsat-ml-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/landsat-ml-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/landsat-ml-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -414,13 +424,13 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card aws-cloud data-access hrrr-model intake kerchunk xarray zarr docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/kerchunk-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/kerchunk-cookbook/README.html"><h4 class="display-4 p-0">Kerchunk Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Hagen, Norland Raphael, Kerchunk Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Norland Raphael Hagen, Kerchunk Cookbook contributors</p>
 <p class="my-2">Kerchunk provides cloud-friendly access to archival data. With Kerchunk you can read collections of legacy file formats (NetCDF, GRIB2 etc.) as if they were ARCO (Analysis-Ready Cloud-Optimized) formats such as Zarr, without creating a copy of the original dataset. </p>
 </div>
 </div>
@@ -429,11 +439,11 @@ Packages
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">AWS-Cloud</span>
 <span class="badge bg-primary mybadges">Data-Access</span>
-<span class="badge bg-primary mybadges">HRRR-model</span>
-<span class="badge bg-primary mybadges">intake</span>
-<span class="badge bg-primary mybadges">kerchunk</span>
-<span class="badge bg-primary mybadges">xarray</span>
-<span class="badge bg-primary mybadges">zarr</span>
+<span class="badge bg-primary mybadges">HRRR-Model</span>
+<span class="badge bg-primary mybadges">Intake</span>
+<span class="badge bg-primary mybadges">Kerchunk</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<span class="badge bg-primary mybadges">Zarr</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/kerchunk-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/kerchunk-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/kerchunk-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -444,13 +454,13 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card ipython data-science intake machine-learning matplotlib numpy oceanography scientific-software-engineering tensorflow xarray xbatcher zarr docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/xbatcher-ML-1-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/xbatcher-ML-1-cookbook/README.html"><h4 class="display-4 p-0">xbatcher for Machine Learning Part 1 Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Dupuis, Christopher, Sinha, Anirban, Abernathey, Ryan, xbatcher for Machine Learning Part 1 Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Christopher Dupuis, Anirban Sinha, Ryan Abernathey, xbatcher for Machine Learning Part 1 Cookbook contributors</p>
 <p class="my-2">A complete workflow for a convolutional neural network using xbatcher. </p>
 </div>
 </div>
@@ -458,17 +468,17 @@ Packages
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">IPython</span>
-<span class="badge bg-primary mybadges">data-science</span>
-<span class="badge bg-primary mybadges">intake</span>
-<span class="badge bg-primary mybadges">machine-learning</span>
-<span class="badge bg-primary mybadges">matplotlib</span>
-<span class="badge bg-primary mybadges">numpy</span>
-<span class="badge bg-primary mybadges">oceanography</span>
-<span class="badge bg-primary mybadges">scientific-software-engineering</span>
-<span class="badge bg-primary mybadges">tensorflow</span>
-<span class="badge bg-primary mybadges">xarray</span>
-<span class="badge bg-primary mybadges">xbatcher</span>
-<span class="badge bg-primary mybadges">zarr</span>
+<span class="badge bg-primary mybadges">Data-Science</span>
+<span class="badge bg-primary mybadges">Intake</span>
+<span class="badge bg-primary mybadges">Machine-Learning</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Oceanography</span>
+<span class="badge bg-primary mybadges">Scientific-Software-Engineering</span>
+<span class="badge bg-primary mybadges">Tensorflow</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<span class="badge bg-primary mybadges">Xbatcher</span>
+<span class="badge bg-primary mybadges">Zarr</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/xbatcher-ML-1-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/xbatcher-ML-1-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/xbatcher-ML-1-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -479,21 +489,21 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card dask xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/dask-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/dask-cookbook/README.html"><h4 class="display-4 p-0">Dask Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Sobhani, Negin, Brian, Vanderwende, Cherian, Deepak, Kirk, Ben, Dask Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Negin Sobhani, Vanderwende Brian, Deepak Cherian, Ben Kirk, Dask Cookbook contributors</p>
 <p class="my-2">A cookbook for Dask workflows. </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">dask</span>
-<span class="badge bg-primary mybadges">xarray</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/dask-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/dask-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="http://binder.projectpythia.org/v2/gh/ProjectPythia/dask-cookbook.git/main"><img alt="Binder" src="http://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -504,24 +514,24 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card geoviews meteorology panel xarray zarr docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/ERA5_interactive-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/ERA5_interactive-cookbook/README.html"><h4 class="display-4 p-0">ARCO ERA-5 Interactive Visualization Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Tyle, Kevin, Barletta, Michael, ARCO ERA-5 Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Tyle, Michael Barletta, ARCO ERA-5 Cookbook contributors</p>
 <p class="my-2">A cookbook to interactively explore and visualize ERA-5 data in ARCO format. </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">geoviews</span>
-<span class="badge bg-primary mybadges">meteorology</span>
-<span class="badge bg-primary mybadges">panel</span>
-<span class="badge bg-primary mybadges">xarray</span>
-<span class="badge bg-primary mybadges">zarr</span>
+<span class="badge bg-primary mybadges">Geoviews</span>
+<span class="badge bg-primary mybadges">Meteorology</span>
+<span class="badge bg-primary mybadges">Panel</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<span class="badge bg-primary mybadges">Zarr</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/ERA5_interactive-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/ERA5_interactive-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/ERA5_interactive-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -532,13 +542,13 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card basemaps gis geospatial-data nasa-earthdata-gibs satellite-imagery spatial-analysis cartopy geoviews hvplot owslib panel docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/web-map-feature-services-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/web-map-feature-services-cookbook/README.html"><h4 class="display-4 p-0">Web Map / Feature Services Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Huang, Andrew, Web Map / Feature Services Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Andrew Huang, Web Map / Feature Services Cookbook contributors</p>
 <p class="my-2">Learn how to use web map and feature services to easily and quickly provide spatial context, without the need to download and process GBs of data! </p>
 </div>
 </div>
@@ -547,15 +557,15 @@ Packages
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">Basemaps</span>
 <span class="badge bg-primary mybadges">GIS</span>
-<span class="badge bg-primary mybadges">Geospatial-data</span>
+<span class="badge bg-primary mybadges">Geospatial-Data</span>
 <span class="badge bg-primary mybadges">NASA-EarthData-GIBS</span>
-<span class="badge bg-primary mybadges">Satellite-imagery</span>
-<span class="badge bg-primary mybadges">Spatial-analysis</span>
-<span class="badge bg-primary mybadges">cartopy</span>
-<span class="badge bg-primary mybadges">geoviews</span>
-<span class="badge bg-primary mybadges">hvPlot</span>
-<span class="badge bg-primary mybadges">owslib</span>
-<span class="badge bg-primary mybadges">panel</span>
+<span class="badge bg-primary mybadges">Satellite-Imagery</span>
+<span class="badge bg-primary mybadges">Spatial-Analysis</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Geoviews</span>
+<span class="badge bg-primary mybadges">HvPlot</span>
+<span class="badge bg-primary mybadges">Owslib</span>
+<span class="badge bg-primary mybadges">Panel</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/web-map-feature-services-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/web-map-feature-services-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/web-map-feature-services-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -566,29 +576,29 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card dask geoviews hvplot interactive-visualization odc-stac panel planetary-computer satellite sentinel-2 xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/interactive-sentinel-2-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/interactive-sentinel-2-cookbook/README.html"><h4 class="display-4 p-0">Sentinel-2 L2A Interactive Dashboard</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Das, Pritam, This Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Pritam Das, This Cookbook contributors</p>
 <p class="my-2">This Project Pythia Cookbook provides a recipe for building an interactive dashboard for the Sentinel-2 L2A satellite imagery using the holoviews ecosystem. </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">dask</span>
-<span class="badge bg-primary mybadges">geoviews</span>
-<span class="badge bg-primary mybadges">hvplot</span>
-<span class="badge bg-primary mybadges">interactive-visualization</span>
-<span class="badge bg-primary mybadges">odc.stac</span>
-<span class="badge bg-primary mybadges">panel</span>
-<span class="badge bg-primary mybadges">planetary-computer</span>
-<span class="badge bg-primary mybadges">satellite</span>
-<span class="badge bg-primary mybadges">sentinel-2</span>
-<span class="badge bg-primary mybadges">xarray</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Geoviews</span>
+<span class="badge bg-primary mybadges">Hvplot</span>
+<span class="badge bg-primary mybadges">Interactive-Visualization</span>
+<span class="badge bg-primary mybadges">Odc.Stac</span>
+<span class="badge bg-primary mybadges">Panel</span>
+<span class="badge bg-primary mybadges">Planetary-Computer</span>
+<span class="badge bg-primary mybadges">Satellite</span>
+<span class="badge bg-primary mybadges">Sentinel-2</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/interactive-sentinel-2-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/interactive-sentinel-2-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/interactive-sentinel-2-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -599,13 +609,13 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card pyresample verde xesmf xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/gridding-cookbook/main/grid_thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/gridding-cookbook/README.html"><h4 class="display-4 p-0">(re)Gridding with xarray</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Martin, Thomas, (re)Gridding with xarray contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Thomas Martin, (re)Gridding with xarray contributors</p>
 <p class="my-2">A small collection of notebooks that explores some (re)gridding options within the Xarray ecosystem. The thumbnail image was created with the assistance of DALL·E 2. </p>
 </div>
 </div>
@@ -613,9 +623,9 @@ Packages
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">Pyresample</span>
-<span class="badge bg-primary mybadges">verde</span>
-<span class="badge bg-primary mybadges">xESMF</span>
-<span class="badge bg-primary mybadges">xarray</span>
+<span class="badge bg-primary mybadges">Verde</span>
+<span class="badge bg-primary mybadges">XESMF</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/gridding-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/gridding-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/gridding-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -626,53 +636,72 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card d-visualizations climate numpy particles vapor weather xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
-<img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/gridding-cookbook/main/grid_thumbnail.png"/>
+<img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/vapor-python-cookbook/main/vapor_thumbnail.png"/>
 <div class="container">
-<a class="text-decoration-none" href="https://projectpythia.org/gridding-cookbook/README.html"><h4 class="display-4 p-0">(re)Gridding with xarray</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Martin, Thomas, (re)Gridding with xarray contributors</p>
-<p class="my-2">A small collection of notebooks that explores some (re)gridding options within the Xarray ecosystem. The thumbnail image was created with the assistance of DALL·E 2. </p>
+<a class="text-decoration-none" href="https://projectpythia.org/vapor-python-cookbook/README.html"><h4 class="display-4 p-0">Vapor Python Cookbook</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Nihanth Cherukuru, Stanislaw 'Stas' Jarosynski, Philip Austin, VAPOR python cookbook contributors</p>
+<p class="my-2">The Visualization and Analysis Platform for Ocean, Atmosphere, and Solar Researchers (VAPOR) provides an interactive 3D visualization environment for exploratory visual analysis and the production of captivating animations and high-quality images. VAPOR runs on most UNIX and Windows systems equipped<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+<div class="modal">
+<div class="content">
+<img class="modal-img" src="https://raw.githubusercontent.com/ProjectPythia/vapor-python-cookbook/main/vapor_thumbnail.png"/>
+<h3 class="display-3">Vapor Python Cookbook</h3>
+<strong>Author:</strong> Nihanth Cherukuru, Stanislaw 'Stas' Jarosynski, Philip Austin, VAPOR python cookbook contributors
+<p class="my-2">The Visualization and Analysis Platform for Ocean, Atmosphere, and Solar Researchers (VAPOR) provides an interactive 3D visualization environment for exploratory visual analysis and the production of captivating animations and high-quality images. VAPOR runs on most UNIX and Windows systems equipped with modern 3D graphics cards. </p>
+<p class="my-2"><span class="badge bg-primary mybadges">3D-Visualizations</span>
+<span class="badge bg-primary mybadges">Climate</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Particles</span>
+<span class="badge bg-primary mybadges">Vapor</span>
+<span class="badge bg-primary mybadges">Weather</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
+<p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://projectpythia.org/vapor-python-cookbook/README.html">Visit Website</a></p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">Pyresample</span>
-<span class="badge bg-primary mybadges">verde</span>
-<span class="badge bg-primary mybadges">xESMF</span>
-<span class="badge bg-primary mybadges">xarray</span>
+<span class="badge bg-primary mybadges">3D-Visualizations</span>
+<span class="badge bg-primary mybadges">Climate</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Particles</span>
+<span class="badge bg-primary mybadges">Vapor</span>
+<span class="badge bg-primary mybadges">Weather</span>
+<span class="badge bg-primary mybadges">Xarray</span>
 <div>
-<a class="reference external" href="https://github.com/ProjectPythia/gridding-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/gridding-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
-<a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/gridding-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
-<a class="reference external" href="https://zenodo.org/badge/latestdoi/540167581"><img alt="DOI" src="https://zenodo.org/badge/540167581.svg"/></a>
+<a class="reference external" href="https://github.com/ProjectPythia/vapor-python-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/vapor-python-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
+<a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/vapor-python-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
+<a class="reference external" href="https://zenodo.org/badge/latestdoi/656355302"><img alt="DOI" src="https://zenodo.org/badge/656355302.svg"/></a>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card cartopy datashader geocat-viz matplotlib metpy seaborn visualization docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/advanced-viz-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/advanced-viz-cookbook/README.html"><h4 class="display-4 p-0">Advanced Visualization Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kent, Julia, Zacharias, Anissa, Eroglu, Orhan, Chmielowiec, Philip, Clyne, John, Advanced Visualization Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Anissa Zacharias, Orhan Eroglu, Philip Chmielowiec, John Clyne, Advanced Visualization Cookbook contributors</p>
 <p class="my-2">This Cookbook demonstrates advanced plotting routines using the Python packages matplotlib, cartopy, metpy, and geocat-viz. </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">cartopy</span>
-<span class="badge bg-primary mybadges">datashader</span>
-<span class="badge bg-primary mybadges">geocat-viz</span>
-<span class="badge bg-primary mybadges">matplotlib</span>
-<span class="badge bg-primary mybadges">metpy</span>
-<span class="badge bg-primary mybadges">seaborn</span>
-<span class="badge bg-primary mybadges">visualization</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Datashader</span>
+<span class="badge bg-primary mybadges">Geocat-Viz</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Metpy</span>
+<span class="badge bg-primary mybadges">Seaborn</span>
+<span class="badge bg-primary mybadges">Visualization</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/advanced-viz-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/advanced-viz-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/advanced-viz-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -683,24 +712,24 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card cartopy datashader holoviews hvplot visualization docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/unstructured-grid-viz-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/unstructured-grid-viz-cookbook/README.html"><h4 class="display-4 p-0">Unstructured Grids Visualization Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Eroglu, Orhan, Chmielowiec, Philip, Jain, Rajeev, Franda, Ian, Unstructured Grids Visualization Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Orhan Eroglu, Philip Chmielowiec, Rajeev Jain, Ian Franda, Unstructured Grids Visualization Cookbook contributors</p>
 <p class="my-2">This Cookbook is a comprehensive showcase of workflows  </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">cartopy</span>
-<span class="badge bg-primary mybadges">datashader</span>
-<span class="badge bg-primary mybadges">holoviews</span>
-<span class="badge bg-primary mybadges">hvplot</span>
-<span class="badge bg-primary mybadges">visualization</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
+<span class="badge bg-primary mybadges">Datashader</span>
+<span class="badge bg-primary mybadges">Holoviews</span>
+<span class="badge bg-primary mybadges">Hvplot</span>
+<span class="badge bg-primary mybadges">Visualization</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/unstructured-grid-viz-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/unstructured-grid-viz-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/unstructured-grid-viz-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -711,30 +740,30 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card atmosphere climate climate-model dask geospatial intake-esm land-model matplotlib sustainability xarray zarr docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/na-cordex-viz-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/na-cordex-viz-cookbook/README.html"><h4 class="display-4 p-0">NA-CORDEX Visualization Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Bonnlander, Brian, McGinnis, Seth, Banihirwe, Anderson, Nienhouse, Eric, de La Beaujardière, Jeff, NA-CORDEX Visualization Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Brian Bonnlander, Seth McGinnis, Anderson Banihirwe, Eric Nienhouse, Jeff de La Beaujardière, NA-CORDEX Visualization Cookbook contributors</p>
 <p class="my-2">A notebook for visualizing data from the NA-CORDEX dataset. </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">atmosphere</span>
-<span class="badge bg-primary mybadges">climate</span>
-<span class="badge bg-primary mybadges">climate-model</span>
-<span class="badge bg-primary mybadges">dask</span>
-<span class="badge bg-primary mybadges">geospatial</span>
-<span class="badge bg-primary mybadges">intake-esm</span>
-<span class="badge bg-primary mybadges">land-model</span>
-<span class="badge bg-primary mybadges">matplotlib</span>
-<span class="badge bg-primary mybadges">sustainability</span>
-<span class="badge bg-primary mybadges">xarray</span>
-<span class="badge bg-primary mybadges">zarr</span>
+<span class="badge bg-primary mybadges">Atmosphere</span>
+<span class="badge bg-primary mybadges">Climate</span>
+<span class="badge bg-primary mybadges">Climate-Model</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Geospatial</span>
+<span class="badge bg-primary mybadges">Intake-Esm</span>
+<span class="badge bg-primary mybadges">Land-Model</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Sustainability</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<span class="badge bg-primary mybadges">Zarr</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/na-cordex-viz-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/na-cordex-viz-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/na-cordex-viz-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -745,21 +774,21 @@ Packages
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card climate xeofs docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="https://raw.githubusercontent.com/ProjectPythia/eofs-cookbook/main/thumbnail.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://projectpythia.org/eofs-cookbook/README.html"><h4 class="display-4 p-0">EOFs Cookbook</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Ford, Robert R., EOFs Cookbook contributors</p>
+<p class="card-subtitle"><strong>Author:</strong> Robert R. Ford, EOFs Cookbook contributors</p>
 <p class="my-2">Description of empirical orthogonal function (EOF) analysis and examples of its application to climate data. </p>
 </div>
 </div>
 </div>
 <div class="sd-card-footer card-footer docutils">
 <div class="tagsandbadges">
-<span class="badge bg-primary mybadges">climate</span>
-<span class="badge bg-primary mybadges">xeofs</span>
+<span class="badge bg-primary mybadges">Climate</span>
+<span class="badge bg-primary mybadges">Xeofs</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/eofs-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/eofs-cookbook/actions/workflows/nightly-build.yaml/badge.svg"/></a>
 <a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/eofs-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg"/></a>
@@ -770,7 +799,7 @@ Packages
 </div>
 </div>
 <div class="modal-backdrop"></div>
-<script src="/_static/custom.js"></script>
+<script src="../html/_static/custom.js"></script>
 </div>
 </div>
 </section></div></div>
@@ -785,8 +814,8 @@ Packages
   </div>
     
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
 
   <footer class="bd-footer">
      
@@ -856,7 +885,7 @@ Packages
         
           By the <a href="https://projectpythia.org/">Project Pythia</a> Community.
         
-          Last updated on 14 April 2024.
+          Last updated on 7 June 2024.
         </p>
       </div>
     </div>
