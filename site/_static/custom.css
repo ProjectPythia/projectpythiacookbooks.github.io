@@ -153,3 +153,49 @@ main.banner-main #project-pythia {
 .tagsandbadges {
   padding: 0 0;
 }
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-item {
+  display: block;
+}
+
+.dropdown-item input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+details.sd-dropdown {
+  box-shadow: none !important;
+}
+
+details.sd-dropdown summary.sd-card-header + div.sd-summary-content {
+  background-color: white !important;
+  border: 0.2rem solid var(--pst-sd-dropdown-color) !important;
+  border-radius: calc(.25rem - 1px);
+}
+
+.bd-content .sd-card .sd-card-header {
+  background-color: var(--pst-color-panel-background) !important;
+}
+
+.sd-summary-content.sd-card-body.docutils {
+  position: absolute;
+  z-index: 100;
+}
+
+details.sd-dropdown summary.sd-card-header {
+  border: 0.2rem solid var(--pst-sd-dropdown-color) !important;
+  border-radius: calc(.25rem - 1px);
+}
+
+p {
+  color: black;
+}
+
+.sd-col.sd-d-flex-row.docutils.has-visible-card {
+  margin-bottom: 1rem;
+}
