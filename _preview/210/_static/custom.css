@@ -178,32 +178,21 @@ details.sd-dropdown summary.sd-card-header + div.sd-summary-content {
   border-radius: calc(.25rem - 1px);
 }
 
-.bd-content .sd-card .sd-card-header {
-  border-color: #1a648f !important;
-  border-radius: .5rem;
-  color: #1a648f;
-}
-
 .sd-summary-content.sd-card-body.docutils {
   position: absolute;
   z-index: 100;
 }
 
-details.sd-dropdown summary.sd-card-header {
-  border: 0.2rem solid #1a648f important;
-  border-radius: calc(.25rem - 1px);
+details.sd-dropdown:not([open])>.sd-card-header {
+  background-color: white !important;
+  border: 2px solid #1a648f !important;
   color: #1a648f;
+  border-radius: .5rem;
 }
 
-details.sd-dropdown:not([open])>.sd-card-header {
-  background-color: var(--pst-color-panel-background) !important;
-  border: 2px solid #1a648f !important;
-  border-radius: .5rem;
-
-details.sd-dropdown[open] > .sd-card-header {
+details.sd-dropdown[open]>.sd-card-header {
   background-color: #1a648f !important;
   color: white;
-  border: 2px solid #1a648f !important;
   border-radius: .5rem;
 }
 
