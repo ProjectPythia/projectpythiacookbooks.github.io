@@ -14,5 +14,4 @@ gridding-cookbook
 vapor-python-cookbook
 advanced-viz-cookbook
 unstructured-grid-viz-cookbook
-na-cordex-viz-cookbook
 ocean-bgc-cookbook
