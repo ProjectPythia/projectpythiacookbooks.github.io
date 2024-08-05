@@ -1,3 +1,19 @@
+:root {
+  --pst-color-border: rgba(0, 0, 0, 0.125) !important;
+}
+
+.bd-main .bd-content .bd-article-container {
+  max-width: 100%;  /* default is 60em */
+}
+.bd-page-width {
+  max-width: 100%;  /* default is 88rem */
+}
+
+.sd-card-footer {
+  background: rgba(var(--spt-color-gray-100), 1) !important;
+  padding: 4px;
+}
+
 main.banner-main #project-pythia {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -74,10 +90,20 @@ main.banner-main #project-pythia {
     margin: auto 0;
     padding: 0;
     max-width: 160px;
+    background: transparent !important;
   }
 
   .card-subtitle {
     font-size: 0.8rem;
+  }
+
+  .my-2 {
+    color: inherit;
+  }
+
+  .text-decoration-none {
+    text-decoration: none;
+    color: inherit;
   }
 
   @media (max-width: 576px) {
@@ -126,4 +152,58 @@ main.banner-main #project-pythia {
 
 .tagsandbadges {
   padding: 0 0;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-item {
+  display: block;
+}
+
+.dropdown-item input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+details.sd-dropdown {
+  box-shadow: none !important;
+}
+
+details.sd-dropdown summary.sd-card-header + div.sd-summary-content {
+  background-color: white !important;
+  border: 0.2rem solid var(--pst-sd-dropdown-color) !important;
+  border-radius: calc(.25rem - 1px);
+}
+
+.sd-summary-content.sd-card-body.docutils {
+  position: absolute;
+  z-index: 100;
+}
+
+details.sd-dropdown:not([open])>.sd-card-header {
+  background-color: white !important;
+  border: 2px solid #1a648f !important;
+  color: #1a648f;
+  border-radius: .5rem;
+}
+
+details.sd-dropdown[open]>.sd-card-header {
+  background-color: #1a648f !important;
+  color: white;
+  border-radius: .5rem;
+}
+
+p {
+  color: black;
+}
+
+main.bd-content #main-content a {
+  color: #1a648f;
+}
+
+.sd-col.sd-d-flex-row.docutils.has-visible-card {
+  margin-bottom: 1rem;
 }

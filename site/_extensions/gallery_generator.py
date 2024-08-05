@@ -1,6 +1,6 @@
 import itertools, json, yaml, pathlib, subprocess, requests
-from textwrap import dedent
 from truncatehtml import truncate
+import re
 
 
 def _grab_binder_link(repo):
@@ -44,6 +44,12 @@ def _run_cffconvert(command):
         error_message = stderr.decode("utf-8").strip()
         raise RuntimeError(f"cffconvert command failed: {error_message}")
 
+def _make_standard_name(name):
+    '''Take string input like LASTNAME, FIRSTNAME and return FIRSTNAME LASTNAME without comma'''
+    lastfirst = name.split(', ')
+    firstlast = lastfirst[::-1]
+    standard = ' '.join(firstlast)
+    return standard
 
 def generate_repo_dicts(all_items):
 
@@ -61,7 +67,7 @@ def generate_repo_dicts(all_items):
             cookbook_title = citation_dict["title"]
             description = citation_dict["description"]
             creators = citation_dict["creators"]
-            names = [item.get("name") for item in creators]
+            names = [_make_standard_name(creator.get("name")) for creator in creators]
             authors = ", ".join(names)
 
             gallery_info_url = f"https://raw.githubusercontent.com/ProjectPythia/{repo}/main/_gallery_info.yml"
@@ -108,14 +114,21 @@ def _generate_sorted_tag_keys(repo_dicts):
     return sorted(key_set)
 
 
+def _title_case_preserve(s):
+    return re.sub(r'\b(\w)', lambda m: m.group(1).upper(), s)
+
+def _make_class(s):
+    return re.sub(r'^\d+', '', s.replace(" ", "-").lower())
+
 def _generate_tag_set(repo_dicts, tag_key=None):
 
     tag_set = set()
     for repo_dict in repo_dicts:
         for k, e in repo_dict["tags"].items():
+            tags = [_title_case_preserve(t) for t in e]
             if tag_key and k != tag_key:
                 continue
-            for t in e:
+            for t in tags:
                 tag_set.add(t)
 
     return tag_set
@@ -127,21 +140,19 @@ def _generate_tag_menu(repo_dicts, tag_key):
     tag_list = sorted(tag_set)
 
     options = "".join(
-        f'<li><label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={tag.replace(" ", "-")} onchange="change();">&nbsp;{tag}</label></li>'
+        f'<li><label class="dropdown-item checkbox {tag_key}"><input type="checkbox" rel={_make_class(tag)} onchange="change();">&nbsp;{tag}</label></li>'
         for tag in tag_list
     )
 
     return f"""
-<div class="dropdown">
-
-<button class="btn btn-sm btn-outline-primary mx-1 dropdown-toggle" type="button" id="{tag_key}Dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-{tag_key.title()}
-</button>
-<ul class="dropdown-menu" aria-labelledby="{tag_key}Dropdown">
-{options}
-</ul>
-</div>
-"""
+            :::{{dropdown}} {tag_key}
+            <div class="dropdown">
+                <ul>
+                    {options}
+                </ul>
+            </div>
+            :::
+    """
 
 
 def generate_menu(repo_dicts, submit_btn_txt=None, submit_btn_link=None):
@@ -174,7 +185,7 @@ def build_from_repos(
 ):
 
     # Build the gallery file
-    panels_body = []
+    grid_body = []
     for repo_dict in repo_dicts:
         repo = repo_dict["repo"]
         github_url = repo_dict["github_url"]
@@ -195,11 +206,11 @@ def build_from_repos(
         tag_list = sorted((itertools.chain(*tag_dict.values())))
         tag_list_f = [tag.replace(" ", "-") for tag in tag_list]
         tags = [
-            f'<span class="badge bg-primary mybadges">{tag}</span>'
+            f'<span class="badge bg-primary mybadges">{_title_case_preserve(tag)}</span>'
             for tag in tag_list_f
         ]
         tags = "\n".join(tags)
-        tag_class_str = " ".join(tag_list_f)
+        tag_classes = " ".join(tag_list_f)
 
         description = repo_dict["description"]
         ellipsis_str = '<a class="modal-btn"> ... more</a>'
@@ -207,70 +218,71 @@ def build_from_repos(
 
         if ellipsis_str in short_description:
             modal_str = f"""
-<div class="modal">
-<div class="content">
-<img src="{thumbnail_url}" class="modal-img" />
-<h3 class="display-3">{cookbook_title}</h3>
-{authors_str}
-<p class="my-2">{description}</p>
-<p class="my-2">{tags}</p>
-<p class="mt-3 mb-0"><a href="{cookbook_url}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
-</div>
-</div>
-"""
+            <div class="modal">
+                <div class="content">
+                    <img src="{thumbnail_url}" class="modal-img" />
+                    <h3 class="display-3">{cookbook_title}</h3>
+                    {authors_str}
+                    <p class="my-2">{description}</p>
+                    <p class="my-2">{tags}</p>
+                    <p class="mt-3 mb-0"><a href="{cookbook_url}" class="btn btn-outline-primary btn-block">Visit Website</a></p>
+                </div>
+            </div>
+            """
+            modal_str = '\n'.join([m.lstrip() for m in modal_str.split('\n')])
         else:
             modal_str = ""
 
-        panels_body.append(
-            f"""\
----
-:column: + tagged-card {tag_class_str}
+        new_card = f"""
+                        :::{{grid-item-card}}
+                        :shadow: md
+                        :class-footer: card-footer
+                        :class-card: tagged-card {tag_classes}
 
-<div class="d-flex gallery-card">
-<img src="{thumbnail_url}" class="gallery-thumbnail" />
-<div class="container">
-<a href="{cookbook_url}" class="text-decoration-none"><h4 class="display-4 p-0">{cookbook_title}</h4></a>
-<p class="card-subtitle">{authors_str}</p>
-<br/>
-<p class="my-2">{short_description}</p>
-</div>
-</div>
-{modal_str}
+                            <div class="d-flex gallery-card">
+                                <img src="{thumbnail_url}" class="gallery-thumbnail" />
+                                <div class="container">
+                                    <a href="{cookbook_url}" class="text-decoration-none"><h4 class="display-4 p-0">{cookbook_title}</h4></a>
+                                    <p class="card-subtitle">{authors_str}</p>
+                                    <p class="my-2">{short_description} </p>
+                                </div>
+                            </div>
+                            {modal_str}
+                            
+                            +++
+                            
+                            <div class="tagsandbadges">
+                                {tags}
+                                <div>{status_badges}</div>
+                            </div>
+                        :::
+                        """
 
-+++
-<div class="tagsandbadges">
-{tags}
-<div>{status_badges}</div>
-</div>
+        grid_body.append('\n'.join([m.lstrip() for m in new_card.split('\n')]))
 
-"""
-        )
-
-    panels_body = "\n".join(panels_body)
 
     stitle = f"#### {subtitle}" if subtitle else ""
     stext = subtext if subtext else ""
 
-    panels = f"""
-# {title}
+    grid_body = "\n".join(grid_body)
 
-{stitle}
-{stext}
+    grid = f"""
+        # {title}
+        
+        {stitle}
+        {stext}
+        
+        {menu_html}
+        
+        ::::{{grid}} 1
+        :gutter: 0
+        
+        {grid_body}
+        
+        <div class="modal-backdrop"></div>
+        <script src="../html/_static/custom.js"></script>
+    """
 
-{menu_html}
+    grid = '\n'.join([m.lstrip() for m in grid.split('\n')])
 
-````{{panels}}
-:column: col-12
-:card: +mb-4 w-100
-:header: d-none
-:body: p-3 m-0
-:footer: p-1
-
-{dedent(panels_body)}
-````
-
-<div class="modal-backdrop"></div>
-<script src="/_static/custom.js"></script>
-"""
-
-    pathlib.Path(f"{filename}.md").write_text(panels)
+    pathlib.Path(f"{filename}.md").write_text(grid)

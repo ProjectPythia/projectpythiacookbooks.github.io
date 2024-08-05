@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.abspath("_extensions"))
 
 project = "Project Pythia Cookbooks"
 author = 'the <a href="https://projectpythia.org/">Project Pythia</a> Community'
-copyright = "2022"
+copyright = "2024"
 
 # -- General configuration ---------------------------------------------------
 
@@ -33,7 +33,7 @@ copyright = "2022"
 # ones.
 extensions = [
     "myst_nb",
-    "sphinx_panels",
+    "sphinx_design",
     "cookbook_gallery_generator",
 ]
 
@@ -75,7 +75,7 @@ html_permalinks_icon = '<i class="fas fa-link"></i>'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
-# html_js_files = ['custom.js']
+html_js_files = ['custom.js']
 
 # Disable Sidebars on special pages
 html_sidebars = {
@@ -84,7 +84,9 @@ html_sidebars = {
 
 # HTML Theme-specific Options
 html_theme_options = {
-    "google_analytics_id": "G-T52X8HNYE8",
+    'analytics': {
+            'google_analytics_id': 'G-T52X8HNYE8',
+        },
     "github_url": "https://github.com/ProjectPythia",
     "twitter_url": "https://twitter.com/project_pythia",
     "icon_links": [
@@ -95,7 +97,11 @@ html_theme_options = {
             "type": "fontawesome",
         }
     ],
-    "logo_link": "https://projectpythia.org",
+    'logo': {
+            'link': 'https://projectpythia.org',
+    },
+    'navbar_align': 'left',
+    'navbar_start': ['navbar-logo'],
     "navbar_links": [
         {"name": "Home", "url": "https://projectpythia.org"},
         {"name": "Foundations", "url": "https://foundations.projectpythia.org"},
@@ -104,24 +110,23 @@ html_theme_options = {
         {"name": "Community", "url": "https://projectpythia.org/#join-us"},
         {"name": "Blog", "url": "https://projectpythia.org/blog.html"},
     ],
+    'navbar_end': ['navbar-icon-links'],
     "page_layouts": {
         "index": "page-standalone.html",
     },
+    'secondary_sidebar_items': [],
     "footer_logos": {
-        "NCAR": "_static/images/logos/NCAR-contemp-logo-blue.svg",
+        "NCAR": "_static/images/logos/NSF-NCAR_Lockup-UCAR-Dark_102523.svg",
         "Unidata": "_static/images/logos/Unidata_logo_horizontal_1200x300.svg",
         "UAlbany": "_static/images/logos/UAlbany-A2-logo-purple-gold.svg",
     },
-    "extra_navbar": ('Theme by <a href="https://projectpythia.org">Project Pythia</a>'),
+    'footer_start': ['footer-logos', 'footer-menu', 'footer-info', 'footer-extra'],
 }
-
-# Panels config
-panels_add_bootstrap_css = False
 
 # MyST config
 myst_enable_extensions = ["amsmath", "colon_fence", "deflist", "html_image"]
 myst_url_schemes = ["http", "https", "mailto"]
-jupyter_execute_notebooks = "off"
+nb_execution_mode = 'off'
 myst_heading_anchors = 3
 
 # Don't run the link checker on immutable DOI links
