@@ -524,7 +524,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :class-card: tagged-card cartopy datashader geocat-viz matplotlib metpy seaborn visualization
 
 <div class="d-flex gallery-card">
-<img src="https://raw.githubusercontent.com/ProjectPythia/advanced-viz-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
+<img src="https://raw.githubusercontent.com/ProjectPythia/advanced-viz-cookbook/main/advancedvizcookbook.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://projectpythia.org/advanced-viz-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">Advanced Visualization Cookbook</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Julia Kent, Anissa Zacharias, Orhan Eroglu, Philip Chmielowiec, John Clyne, Advanced Visualization Cookbook contributors</p>
