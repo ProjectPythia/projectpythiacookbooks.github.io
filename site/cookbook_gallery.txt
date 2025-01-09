@@ -18,4 +18,5 @@ na-cordex-viz-cookbook
 eofs-cookbook
 ocean-bgc-cookbook
 paleoPCA-cookbook
+esgf-cookbook
 wavelet-cookbook

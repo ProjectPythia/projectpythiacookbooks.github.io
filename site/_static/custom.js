@@ -11,13 +11,16 @@ function getClassOfCheckedCheckboxes(checkboxes) {
 function change() {
   console.log("Change event fired.");
   var domainsCbs = document.querySelectorAll(".domains input[type='checkbox']");
+  var eventsCbs = document.querySelectorAll(".events input[type='checkbox']");
   var packagesCbs = document.querySelectorAll(".packages input[type='checkbox']");
 
   var domainTags = getClassOfCheckedCheckboxes(domainsCbs);
+  var eventTags = getClassOfCheckedCheckboxes(eventsCbs);
   var packageTags = getClassOfCheckedCheckboxes(packagesCbs);
 
   var filters = {
     domains: domainTags,
+    events: eventTags,
     packages: packageTags
   };
 
@@ -31,13 +34,22 @@ function filterResults(filters) {
   rElems.forEach(function (el) {
     var isVisible = true; // Assume visible by default
 
-    // Check if the element has any domain or package filter
-    if (filters.domains.length > 0 || filters.packages.length > 0) {
-      var hasMatchingDomain = filters.domains.length === 0 || filters.domains.some(domain => el.classList.contains(domain));
-      var hasMatchingPackage = filters.packages.length === 0 || filters.packages.some(package => el.classList.contains(package));
+    // Check for matching domains
+    if (filters.domains.length > 0) {
+      var hasMatchingDomain = filters.domains.some(domain => el.classList.contains(domain));
+      isVisible = isVisible && hasMatchingDomain;
+    }
 
-      // The element should be visible if it matches any filter within each category
-      isVisible = hasMatchingDomain && hasMatchingPackage;
+    // Check for matching events
+    if (filters.events.length > 0) {
+      var hasMatchingEvent = filters.events.some(event => el.classList.contains(event));
+      isVisible = isVisible && hasMatchingEvent;
+    }
+
+    // Check for matching packages
+    if (filters.packages.length > 0) {
+      var hasMatchingPackage = filters.packages.some(package => el.classList.contains(package));
+      isVisible = isVisible && hasMatchingPackage;
     }
 
     // Toggle visibility based on the result
