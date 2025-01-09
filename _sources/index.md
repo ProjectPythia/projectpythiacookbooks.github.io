@@ -634,7 +634,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
-:class-card: tagged-card climate xeofs
+:class-card: tagged-card Cook-off-2024 climate xeofs
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/eofs-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
@@ -649,6 +649,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 +++
 
 <div class="tagsandbadges">
+<span class="badge bg-primary mybadges">Cook-Off-2024</span>
 <span class="badge bg-primary mybadges">Climate</span>
 <span class="badge bg-primary mybadges">Xeofs</span>
 <div>
