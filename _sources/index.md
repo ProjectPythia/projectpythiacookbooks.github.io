@@ -27,7 +27,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{dropdown} events
 <div class="dropdown">
 <ul>
-<li><label class="dropdown-item checkbox events"><input type="checkbox" rel=cook-off-2024 onchange="change();">&nbsp;Cook-Off 2024</label></li>
+<li><label class="dropdown-item checkbox events"><input type="checkbox" rel=cook-off-2023 onchange="change();">&nbsp;Cook-Off 2023</label></li><li><label class="dropdown-item checkbox events"><input type="checkbox" rel=cook-off-2024 onchange="change();">&nbsp;Cook-Off 2024</label></li>
 </ul>
 </div>
 :::
@@ -341,7 +341,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
-:class-card: tagged-card geoviews meteorology panel xarray zarr
+:class-card: tagged-card Cook-off-2023 Cook-off-2024 geoviews meteorology panel xarray zarr
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/ERA5_interactive-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
@@ -356,6 +356,8 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 +++
 
 <div class="tagsandbadges">
+<span class="badge bg-primary mybadges">Cook-Off-2023</span>
+<span class="badge bg-primary mybadges">Cook-Off-2024</span>
 <span class="badge bg-primary mybadges">Geoviews</span>
 <span class="badge bg-primary mybadges">Meteorology</span>
 <span class="badge bg-primary mybadges">Panel</span>
@@ -664,7 +666,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
-:class-card: tagged-card cartopy climate-modeling matplotlib oceanography xarray
+:class-card: tagged-card Cook-off-2024 cartopy climate-modeling matplotlib oceanography xarray
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/ocean-bgc-cookbook/main/coccolithophore_kristen_krumhardt.png" class="gallery-thumbnail" />
@@ -681,7 +683,8 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 <h3 class="display-3">Ocean Biogeochemistry Cookbook</h3>
 <strong>Author:</strong> Lev Romashkov, Kristen Krumhardt, Ocean Biogeochemistry Cookbook Contributors
 <p class="my-2">This Project Pythia Cookbook covers working with various sources of ocean biogeochemistry data, including Community Earth System Model (CESM) output and observational data. It provides a brief introduction to some metrics important to ocean biogeochemistry, from physical quantities like temperature to biological quantities like plankton biomass. It also demonstrates some of the data science techniques used to work with this information, and provides an introduction to the relationship between modeled and observational estimates.</p>
-<p class="my-2"><span class="badge bg-primary mybadges">Cartopy</span>
+<p class="my-2"><span class="badge bg-primary mybadges">Cook-Off-2024</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
 <span class="badge bg-primary mybadges">Climate-Modeling</span>
 <span class="badge bg-primary mybadges">Matplotlib</span>
 <span class="badge bg-primary mybadges">Oceanography</span>
@@ -694,6 +697,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 +++
 
 <div class="tagsandbadges">
+<span class="badge bg-primary mybadges">Cook-Off-2024</span>
 <span class="badge bg-primary mybadges">Cartopy</span>
 <span class="badge bg-primary mybadges">Climate-Modeling</span>
 <span class="badge bg-primary mybadges">Matplotlib</span>
@@ -744,7 +748,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
-:class-card: tagged-card Climate Climate-Model Data-Access Intake Intake-esgf Xarray
+:class-card: tagged-card Climate Climate-Model Cook-off-2024 Data-Access Intake Intake-esgf Xarray
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/esgf-cookbook/main/notebooks/images/logos/esgf2-us.png" class="gallery-thumbnail" />
@@ -761,6 +765,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 <div class="tagsandbadges">
 <span class="badge bg-primary mybadges">Climate</span>
 <span class="badge bg-primary mybadges">Climate-Model</span>
+<span class="badge bg-primary mybadges">Cook-Off-2024</span>
 <span class="badge bg-primary mybadges">Data-Access</span>
 <span class="badge bg-primary mybadges">Intake</span>
 <span class="badge bg-primary mybadges">Intake-Esgf</span>
