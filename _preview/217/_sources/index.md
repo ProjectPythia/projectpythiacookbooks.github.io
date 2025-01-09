@@ -18,7 +18,16 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{dropdown} domains
 <div class="dropdown">
 <ul>
-<li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=d-visualizations onchange="change();">&nbsp;3D Visualizations</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=aws-cloud onchange="change();">&nbsp;AWS Cloud</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=atmosphere onchange="change();">&nbsp;Atmosphere</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=basemaps onchange="change();">&nbsp;Basemaps</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate onchange="change();">&nbsp;Climate</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate-model onchange="change();">&nbsp;Climate Model</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate-modeling onchange="change();">&nbsp;Climate Modeling</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-access onchange="change();">&nbsp;Data Access</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-science onchange="change();">&nbsp;Data Science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=fourier-transform onchange="change();">&nbsp;Fourier Transform</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=gis onchange="change();">&nbsp;GIS</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=geospatial onchange="change();">&nbsp;Geospatial</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=geospatial-data onchange="change();">&nbsp;Geospatial Data</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=hrrr-model onchange="change();">&nbsp;HRRR Model</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=interactive-visualization onchange="change();">&nbsp;Interactive-Visualization</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=land-model onchange="change();">&nbsp;Land Model</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=machine-learning onchange="change();">&nbsp;Machine Learning</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=meteorology onchange="change();">&nbsp;Meteorology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=ml onchange="change();">&nbsp;Ml</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=nasa-earthdata-gibs onchange="change();">&nbsp;NASA EarthData GIBS</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=nsf-jetstream2 onchange="change();">&nbsp;NSF JetStream2</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=oceanography onchange="change();">&nbsp;Oceanography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=paleoclimatology onchange="change();">&nbsp;Paleoclimatology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=particles onchange="change();">&nbsp;Particles</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=radar onchange="change();">&nbsp;Radar</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=satellite onchange="change();">&nbsp;Satellite</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=satellite-imagery onchange="change();">&nbsp;Satellite Imagery</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=scientific-software-engineering onchange="change();">&nbsp;Scientific Software Engineering</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=sentinel-2 onchange="change();">&nbsp;Sentinel-2</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=signal-analysis onchange="change();">&nbsp;Signal Analysis</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=spatial-analysis onchange="change();">&nbsp;Spatial Analysis</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=sustainability onchange="change();">&nbsp;Sustainability</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=visualization onchange="change();">&nbsp;Visualization</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=wavelet onchange="change();">&nbsp;Wavelet</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=weather onchange="change();">&nbsp;Weather</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=zarr onchange="change();">&nbsp;Zarr</label></li>
+<li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=d-visualizations onchange="change();">&nbsp;3D Visualizations</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=aws-cloud onchange="change();">&nbsp;AWS Cloud</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=atmosphere onchange="change();">&nbsp;Atmosphere</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=basemaps onchange="change();">&nbsp;Basemaps</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate onchange="change();">&nbsp;Climate</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate-model onchange="change();">&nbsp;Climate Model</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=climate-modeling onchange="change();">&nbsp;Climate Modeling</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-access onchange="change();">&nbsp;Data Access</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=data-science onchange="change();">&nbsp;Data Science</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=fourier-transform onchange="change();">&nbsp;Fourier Transform</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=gis onchange="change();">&nbsp;GIS</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=geospatial onchange="change();">&nbsp;Geospatial</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=geospatial-data onchange="change();">&nbsp;Geospatial Data</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=hrrr-model onchange="change();">&nbsp;HRRR Model</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=intake onchange="change();">&nbsp;Intake</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=interactive-visualization onchange="change();">&nbsp;Interactive-Visualization</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=land-model onchange="change();">&nbsp;Land Model</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=machine-learning onchange="change();">&nbsp;Machine Learning</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=meteorology onchange="change();">&nbsp;Meteorology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=ml onchange="change();">&nbsp;Ml</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=nasa-earthdata-gibs onchange="change();">&nbsp;NASA EarthData GIBS</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=nsf-jetstream2 onchange="change();">&nbsp;NSF JetStream2</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=oceanography onchange="change();">&nbsp;Oceanography</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=paleoclimatology onchange="change();">&nbsp;Paleoclimatology</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=particles onchange="change();">&nbsp;Particles</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=radar onchange="change();">&nbsp;Radar</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=satellite onchange="change();">&nbsp;Satellite</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=satellite-imagery onchange="change();">&nbsp;Satellite Imagery</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=scientific-software-engineering onchange="change();">&nbsp;Scientific Software Engineering</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=sentinel-2 onchange="change();">&nbsp;Sentinel-2</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=signal-analysis onchange="change();">&nbsp;Signal Analysis</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=spatial-analysis onchange="change();">&nbsp;Spatial Analysis</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=sustainability onchange="change();">&nbsp;Sustainability</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=visualization onchange="change();">&nbsp;Visualization</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=wavelet onchange="change();">&nbsp;Wavelet</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=weather onchange="change();">&nbsp;Weather</label></li><li><label class="dropdown-item checkbox domains"><input type="checkbox" rel=zarr onchange="change();">&nbsp;Zarr</label></li>
+</ul>
+</div>
+:::
+
+
+:::{dropdown} events
+<div class="dropdown">
+<ul>
+<li><label class="dropdown-item checkbox events"><input type="checkbox" rel=cook-off-2023 onchange="change();">&nbsp;Cook-Off 2023</label></li><li><label class="dropdown-item checkbox events"><input type="checkbox" rel=cook-off-2024 onchange="change();">&nbsp;Cook-Off 2024</label></li>
 </ul>
 </div>
 :::
@@ -27,7 +36,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{dropdown} packages
 <div class="dropdown">
 <ul>
-<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cartopy onchange="change();">&nbsp;Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;Dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=datashader onchange="change();">&nbsp;Datashader</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=eofs onchange="change();">&nbsp;Eofs</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-datafiles onchange="change();">&nbsp;Geocat-Datafiles</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-viz onchange="change();">&nbsp;Geocat-Viz</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geoviews onchange="change();">&nbsp;Geoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=holoviews onchange="change();">&nbsp;Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvplot onchange="change();">&nbsp;HvPlot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvplot onchange="change();">&nbsp;Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=ipython onchange="change();">&nbsp;IPython</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;Intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-esm onchange="change();">&nbsp;Intake-Esm</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-markdown onchange="change();">&nbsp;Intake-Markdown</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-xarray onchange="change();">&nbsp;Intake-Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=kerchunk onchange="change();">&nbsp;Kerchunk</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=matplotlib onchange="change();">&nbsp;Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=metpy onchange="change();">&nbsp;Metpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=numpy onchange="change();">&nbsp;Numpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=odc.stac onchange="change();">&nbsp;Odc.Stac</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=owslib onchange="change();">&nbsp;Owslib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pandas onchange="change();">&nbsp;Pandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=panel onchange="change();">&nbsp;Panel</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=planetary-computer onchange="change();">&nbsp;Planetary-Computer</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=py-art onchange="change();">&nbsp;Py-Art</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pyleoclim onchange="change();">&nbsp;Pyleoclim</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pyresample onchange="change();">&nbsp;Pyresample</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pywavelets onchange="change();">&nbsp;Pywavelets</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=scipy onchange="change();">&nbsp;Scipy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=seaborn onchange="change();">&nbsp;Seaborn</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=tensorflow onchange="change();">&nbsp;Tensorflow</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=vapor onchange="change();">&nbsp;Vapor</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=verde onchange="change();">&nbsp;Verde</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xesmf onchange="change();">&nbsp;XESMF</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xbatcher onchange="change();">&nbsp;Xbatcher</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xeofs onchange="change();">&nbsp;Xeofs</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xesmf onchange="change();">&nbsp;Xesmf</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=zarr onchange="change();">&nbsp;Zarr</label></li>
+<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cartopy onchange="change();">&nbsp;Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;Dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=datashader onchange="change();">&nbsp;Datashader</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=eofs onchange="change();">&nbsp;Eofs</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-datafiles onchange="change();">&nbsp;Geocat-Datafiles</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-viz onchange="change();">&nbsp;Geocat-Viz</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geoviews onchange="change();">&nbsp;Geoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=holoviews onchange="change();">&nbsp;Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvplot onchange="change();">&nbsp;HvPlot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvplot onchange="change();">&nbsp;Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=ipython onchange="change();">&nbsp;IPython</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;Intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-esgf onchange="change();">&nbsp;Intake-Esgf</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-esm onchange="change();">&nbsp;Intake-Esm</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-markdown onchange="change();">&nbsp;Intake-Markdown</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake-xarray onchange="change();">&nbsp;Intake-Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=kerchunk onchange="change();">&nbsp;Kerchunk</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=matplotlib onchange="change();">&nbsp;Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=metpy onchange="change();">&nbsp;Metpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=numpy onchange="change();">&nbsp;Numpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=odc.stac onchange="change();">&nbsp;Odc.Stac</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=owslib onchange="change();">&nbsp;Owslib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pandas onchange="change();">&nbsp;Pandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=panel onchange="change();">&nbsp;Panel</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=planetary-computer onchange="change();">&nbsp;Planetary-Computer</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=py-art onchange="change();">&nbsp;Py-Art</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pyleoclim onchange="change();">&nbsp;Pyleoclim</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pyresample onchange="change();">&nbsp;Pyresample</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pywavelets onchange="change();">&nbsp;Pywavelets</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=scipy onchange="change();">&nbsp;Scipy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=seaborn onchange="change();">&nbsp;Seaborn</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=tensorflow onchange="change();">&nbsp;Tensorflow</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=vapor onchange="change();">&nbsp;Vapor</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=verde onchange="change();">&nbsp;Verde</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xesmf onchange="change();">&nbsp;XESMF</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xbatcher onchange="change();">&nbsp;Xbatcher</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xeofs onchange="change();">&nbsp;Xeofs</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xesmf onchange="change();">&nbsp;Xesmf</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xradar onchange="change();">&nbsp;Xradar</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=zarr onchange="change();">&nbsp;Zarr</label></li>
 </ul>
 </div>
 :::
@@ -136,7 +145,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
-:class-card: tagged-card Py-Art radar
+:class-card: tagged-card Cook-off-2023 Cook-off-2024 Py-Art Xradar atmosphere radar
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/radar-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
@@ -151,7 +160,11 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 +++
 
 <div class="tagsandbadges">
+<span class="badge bg-primary mybadges">Cook-Off-2023</span>
+<span class="badge bg-primary mybadges">Cook-Off-2024</span>
 <span class="badge bg-primary mybadges">Py-Art</span>
+<span class="badge bg-primary mybadges">Xradar</span>
+<span class="badge bg-primary mybadges">Atmosphere</span>
 <span class="badge bg-primary mybadges">Radar</span>
 <div>
 <a class="reference external" href="https://github.com/ProjectPythia/radar-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/radar-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
@@ -332,7 +345,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
-:class-card: tagged-card geoviews meteorology panel xarray zarr
+:class-card: tagged-card Cook-off-2023 Cook-off-2024 geoviews meteorology panel xarray zarr
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/ERA5_interactive-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
@@ -347,6 +360,8 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 +++
 
 <div class="tagsandbadges">
+<span class="badge bg-primary mybadges">Cook-Off-2023</span>
+<span class="badge bg-primary mybadges">Cook-Off-2024</span>
 <span class="badge bg-primary mybadges">Geoviews</span>
 <span class="badge bg-primary mybadges">Meteorology</span>
 <span class="badge bg-primary mybadges">Panel</span>
@@ -625,7 +640,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
-:class-card: tagged-card climate xeofs
+:class-card: tagged-card Cook-off-2024 climate xeofs
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/eofs-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
@@ -640,6 +655,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 +++
 
 <div class="tagsandbadges">
+<span class="badge bg-primary mybadges">Cook-Off-2024</span>
 <span class="badge bg-primary mybadges">Climate</span>
 <span class="badge bg-primary mybadges">Xeofs</span>
 <div>
@@ -654,7 +670,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
-:class-card: tagged-card cartopy climate-modeling matplotlib oceanography xarray
+:class-card: tagged-card Cook-off-2024 cartopy climate-modeling matplotlib oceanography xarray
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/ocean-bgc-cookbook/main/coccolithophore_kristen_krumhardt.png" class="gallery-thumbnail" />
@@ -671,7 +687,8 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 <h3 class="display-3">Ocean Biogeochemistry Cookbook</h3>
 <strong>Author:</strong> Lev Romashkov, Kristen Krumhardt, Ocean Biogeochemistry Cookbook Contributors
 <p class="my-2">This Project Pythia Cookbook covers working with various sources of ocean biogeochemistry data, including Community Earth System Model (CESM) output and observational data. It provides a brief introduction to some metrics important to ocean biogeochemistry, from physical quantities like temperature to biological quantities like plankton biomass. It also demonstrates some of the data science techniques used to work with this information, and provides an introduction to the relationship between modeled and observational estimates.</p>
-<p class="my-2"><span class="badge bg-primary mybadges">Cartopy</span>
+<p class="my-2"><span class="badge bg-primary mybadges">Cook-Off-2024</span>
+<span class="badge bg-primary mybadges">Cartopy</span>
 <span class="badge bg-primary mybadges">Climate-Modeling</span>
 <span class="badge bg-primary mybadges">Matplotlib</span>
 <span class="badge bg-primary mybadges">Oceanography</span>
@@ -684,6 +701,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 +++
 
 <div class="tagsandbadges">
+<span class="badge bg-primary mybadges">Cook-Off-2024</span>
 <span class="badge bg-primary mybadges">Cartopy</span>
 <span class="badge bg-primary mybadges">Climate-Modeling</span>
 <span class="badge bg-primary mybadges">Matplotlib</span>
@@ -701,7 +719,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
-:class-card: tagged-card NSF-JetStream2 Paleoclimatology Pyleoclim eofs xarray
+:class-card: tagged-card Cook-off-2024 NSF-JetStream2 Paleoclimatology Pyleoclim eofs xarray
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/paleoPCA-cookbook/main/LinkedEarth.png" class="gallery-thumbnail" />
@@ -716,6 +734,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 +++
 
 <div class="tagsandbadges">
+<span class="badge bg-primary mybadges">Cook-Off-2024</span>
 <span class="badge bg-primary mybadges">NSF-JetStream2</span>
 <span class="badge bg-primary mybadges">Paleoclimatology</span>
 <span class="badge bg-primary mybadges">Pyleoclim</span>
@@ -733,7 +752,41 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 :::{grid-item-card}
 :shadow: md
 :class-footer: card-footer
-:class-card: tagged-card data-science fourier-transform geocat-datafiles matplotlib numpy pandas pywavelets scipy signal-analysis wavelet xarray
+:class-card: tagged-card Climate Climate-Model Cook-off-2024 Data-Access Intake Intake-esgf Xarray
+
+<div class="d-flex gallery-card">
+<img src="https://raw.githubusercontent.com/ProjectPythia/esgf-cookbook/main/notebooks/images/logos/esgf2-us.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://projectpythia.org/esgf-cookbook/README.html" class="text-decoration-none"><h4 class="display-4 p-0">ESGF Cookbook</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Maxwell A. Grover, Nathan Collier, Carsten Ehbrecht, Jacqueline Nugent, Gerardo A. Rivera Tello</p>
+<p class="my-2">A cookbook for working with data from the Earth System Grid Federation. </p>
+</div>
+</div>
+
+
++++
+
+<div class="tagsandbadges">
+<span class="badge bg-primary mybadges">Climate</span>
+<span class="badge bg-primary mybadges">Climate-Model</span>
+<span class="badge bg-primary mybadges">Cook-Off-2024</span>
+<span class="badge bg-primary mybadges">Data-Access</span>
+<span class="badge bg-primary mybadges">Intake</span>
+<span class="badge bg-primary mybadges">Intake-Esgf</span>
+<span class="badge bg-primary mybadges">Xarray</span>
+<div>
+<a class="reference external" href="https://github.com/ProjectPythia/esgf-cookbook/actions/workflows/nightly-build.yaml"><img alt="nightly-build" src="https://github.com/ProjectPythia/esgf-cookbook/actions/workflows/nightly-build.yaml/badge.svg" /></a>
+<a class="reference external" href="https://binder.projectpythia.org/v2/gh/ProjectPythia/esgf-cookbook.git/main"><img alt="Binder" src="https://binder.projectpythia.org/badge_logo.svg" /></a>
+<a class="reference external" href="https://zenodo.org/badge/latestdoi/721319801"><img alt="DOI" src="https://zenodo.org/badge/721319801.svg" /></a>
+</div>
+</div>
+:::
+
+
+:::{grid-item-card}
+:shadow: md
+:class-footer: card-footer
+:class-card: tagged-card Cook-off-2024 data-science fourier-transform geocat-datafiles matplotlib numpy pandas pywavelets scipy signal-analysis wavelet xarray
 
 <div class="d-flex gallery-card">
 <img src="https://raw.githubusercontent.com/ProjectPythia/wavelet-cookbook/main/thumbnail.png" class="gallery-thumbnail" />
@@ -748,6 +801,7 @@ Interested in contributing a new Cookbook or contributing to an existing Cookboo
 +++
 
 <div class="tagsandbadges">
+<span class="badge bg-primary mybadges">Cook-Off-2024</span>
 <span class="badge bg-primary mybadges">Data-Science</span>
 <span class="badge bg-primary mybadges">Fourier-Transform</span>
 <span class="badge bg-primary mybadges">Geocat-Datafiles</span>
