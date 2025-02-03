@@ -20,3 +20,4 @@ ocean-bgc-cookbook
 paleoPCA-cookbook
 esgf-cookbook
 wavelet-cookbook
+eo-datascience-cookbook
